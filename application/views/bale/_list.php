@@ -11,7 +11,7 @@
             <div class="col">
                <div class="btn-group">
 
-                  <a href="<?= base_url(); ?>Product/read" class="btn btn-secondary">
+                  <a href="<?= base_url(); ?>bale/read" class="btn btn-secondary">
                      Add New
                   </a>
 
@@ -41,41 +41,37 @@
                      <table id="example" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                            <tr>
+                              <th>Client</th>
+                              <th>Total Weight</th>
+                              <th>Unique Number</th>
                               <th>Barcode</th>
-                              <th>Product</th>
-                              <th>Description</th>
-                              <th>Selling Price</th>
-                              <th>Reorder Level</th>
-                              <th>Unit</th>
+                              <th>Category</th>
                               <th></th>
                            </tr>
                         </thead>
                         <tbody>
                            <?php
                            $count = 1;
-                           foreach ($this->M_product->get_products() as $row): ?>
+                           foreach ($this->M_bale->get_bales() as $row): ?>
                               <tr>
 
                                  <td>
+                                    <?= $this->M_client->get_trading_name($row['client_id']); ?>
+                                 </td>
+                                 <td>
+                                    <?= $row['total_weight'] ?>
+                                 </td>
+                                 <td>
+                                    <?= $row['unique_number'] ?>
+                                 </td>
+                                 <td>
                                     <?= $row['barcode'] ?>
-                                 </td>
-                                 <td>
-                                    <?= $row['name'] ?>
-                                 </td>
-                                 <td>
-                                    <?= $row['desc'] ?>
-                                 </td>
-                                
-                                 <td>
-                                    <?= number_format($row['selling_price'], 2) ?>
                                  </td>
 
                                  <td>
-                                    <?= $row['reorder_level']; ?>
+                                    <?= $this->M_category->get_category_name($row['category_id']); ?>
                                  </td>
-                                 <td>
-                                 <?= $this->M_unit->get_unit_type($row['unit_id']) ?>
-                                 </td>
+
                                  <td>
                                     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                        <div class="btn-group" role="group">
@@ -84,21 +80,21 @@
                                           <ul class="dropdown-menu">
 
                                              <li>
-                                                <a href="<?= base_url(); ?>Product/read/<?= $row['product_id']; ?>"
+                                                <a href="<?= base_url(); ?>Bale/read/<?= $row['bale_id']; ?>"
                                                    class="dropdown-item">
                                                    Edit
                                                 </a>
                                              </li>
 
                                              <li>
-                                                <a href="<?= base_url(); ?>Product/view/<?= $row['product_id']; ?>"
+                                                <a href="<?= base_url(); ?>Bale/view/<?= $row['bale_id']; ?>"
                                                    class="dropdown-item">
                                                    View
                                                 </a>
                                              </li>
 
                                              <li>
-                                                <a href="<?= base_url(); ?>Product/delete/<?= $row['product_id']; ?>"
+                                                <a href="<?= base_url(); ?>Bale/delete/<?= $row['bale_id']; ?>"
                                                    class="dropdown-item">
                                                    Delete
                                                 </a>
