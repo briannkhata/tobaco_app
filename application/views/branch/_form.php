@@ -26,19 +26,28 @@
                   <hr>
                   <form action="<?= base_url(); ?>Shop/save" id="form" class="row g-3" method="post">
                      <div class="col-md-12">
-                        <label class="control-label">Shop Name</label>
-                        <input type="text" name="name" class="form-control"
-                           value="<?php if (!empty($name)) {
-                              echo $name;
+                        <label class="control-label">Branch Name</label>
+                        <input type="text" name="branch_name" class="form-control"
+                           value="<?php if (!empty($branch_name)) {
+                              echo $branch_name;
                            } ?>" required="">
                      </div>
 
-                     <div class="col-md-12">
+                     <div class="col-md-6">
+                        <label class="control-label">Address</label>
+                        <textarea name="address" class="form-control">
+                           <?php if (!empty($address)) {
+                              echo $address;
+                           } ?>
+                           </textarea> 
+                     </div>
+
+                     <div class="col-md-6">
                         <label class="control-label">Description</label>
-                        <input type="text" name="description" class="form-control"
-                           value="<?php if (!empty($description)) {
+                        <textarea name="description" class="form-control"><?php if (!empty($description)) {
                               echo $description;
-                           } ?>">
+                           } ?>
+                           </textarea>
                      </div>
 
                      <div class="col-md-12">

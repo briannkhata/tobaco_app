@@ -24,30 +24,24 @@
                      </div>
                   <?php } ?>
                   <hr>
-                  <form class="row g-3" action="<?= base_url(); ?>Supplier/save" method="POST">
+                  <form class="row g-3" action="<?= base_url(); ?>Department/save" method="POST">
                      <div class="col-md-12">
-                        <label for="input1" class="form-label">Name</label>
-                        <input type="text" name="name" class="form-control"
-                           value="<?php if (!empty($name)) {
-                              echo $name;
-                           } ?>" required="">
+                        <label for="input1" class="form-label">Department Name</label>
+                        <input type="text" name="department_name" class="form-control" value="<?php if (!empty($department_name)) {
+                           echo $department_name;
+                        } ?>" required="">
                      </div>
 
                      <div class="col-md-12">
-                        <label for="input1" class="form-label">Address</label>
-                        <input type="text" name="address" class="form-control"
-                           value="<?php if (!empty($address)) {
-                              echo $address;
-                           } ?>" required="">
+                        <label for="input1" class="form-label">Description</label>
+                        <textarea name="description" class="form-control" required>
+                        <?php if (!empty($description)) {
+                           echo $description;
+                        } ?>
+                        </textarea>
                      </div>
 
-                     <div class="col-md-12">
-                        <label for="input1" class="form-label">Phone</label>
-                        <input type="text" name="phone" class="form-control"
-                           value="<?php if (!empty($phone)) {
-                              echo $phone;
-                           } ?>">
-                     </div>
+
                      <div class="col-md-12">
                         <?php if (isset($update_id)) { ?>
                            <input type="hidden" name="update_id" id="update_id" value="<?= $update_id; ?>">

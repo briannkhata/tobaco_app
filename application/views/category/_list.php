@@ -35,9 +35,7 @@
                   <thead>
                      <tr id="filters">
                         <th>Name</th>
-                        <th>UN Code</th>
-                        <th>Desc</th>
-                        <th>Products</th>
+                        <th>Description</th>
                         <th></th>
                      </tr>
                   </thead>
@@ -45,15 +43,12 @@
                      <?php foreach ($this->M_category->get_categories() as $row) { ?>
                         <tr>
                            <td>
-                              <?= $row['category']; ?>
+                              <?= $row['category_name']; ?>
                            </td>
+                         
                            <td>
-                              <?= $row['un_code']; ?>
+                              <?= $row['description']; ?>
                            </td>
-                           <td>
-                              <?= $row['desc']; ?>
-                           </td>
-                           <td><?= count($this->M_product->get_products_by_category($row['category_id'])); ?></td>
                            <td>
                               <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                  <div class="btn-group" role="group">
@@ -66,12 +61,7 @@
                                              Edit
                                           </a>
                                        </li>
-                                       <li>
-                                          <a href="<?= base_url(); ?>Category/view/<?= $row['category_id']; ?>"
-                                             class="dropdown-item">
-                                             View Products
-                                          </a>
-                                       </li>
+                                       
                                        <li>
                                           <a href="<?= base_url(); ?>Category/delete/<?= $row['category_id']; ?>"
                                              class="dropdown-item">

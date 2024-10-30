@@ -9,7 +9,7 @@
       <hr>
       <div class="col">
          <div class="btn-group">
-            <a href="<?= base_url(); ?>Shop/read" class="btn btn-secondary">
+            <a href="<?= base_url(); ?>branch/read" class="btn btn-secondary">
                Add New
             </a>
          </div>
@@ -34,16 +34,20 @@
                <table id="example" class="table table-striped table-bordered" style="width:100%">
                   <thead>
                      <tr id="filters">
-                        <th>Name</th>
+                        <th>Branch Name</th>
+                        <th>Address</th>
                         <th>Description</th>
                         <th></th>
                      </tr>
                   </thead>
                   <tbody>
-                     <?php foreach ($this->M_shop->get_shops() as $row) { ?>
+                     <?php foreach ($this->M_branch->get_branches() as $row) { ?>
                         <tr>
                            <td>
-                              <?= $row['name']; ?>
+                              <?= $row['branch_name']; ?>
+                           </td>
+                           <td>
+                              <?= $row['address']; ?>
                            </td>
                            <td>
                               <?= $row['description']; ?>
@@ -55,13 +59,13 @@
                                        data-bs-toggle="dropdown" aria-expanded="false">Action</button>
                                     <ul class="dropdown-menu">
                                     <li>
-                                          <a href="<?= base_url(); ?>Shop/read/<?= $row['shop_id']; ?>"
+                                          <a href="<?= base_url(); ?>Branch/read/<?= $row['branch_id']; ?>"
                                              class="dropdown-item">
                                              Edit
                                           </a>
                                        </li>
                                        <li>
-                                          <a href="<?= base_url(); ?>Shop/delete/<?= $row['shop_id']; ?>"
+                                          <a href="<?= base_url(); ?>Branch/delete/<?= $row['branch_id']; ?>"
                                              class="dropdown-item">
                                              Delete
                                           </a>

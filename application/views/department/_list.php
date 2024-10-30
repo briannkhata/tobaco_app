@@ -9,7 +9,7 @@
       <hr>
       <div class="col">
          <div class="btn-group">
-            <a href="<?= base_url(); ?>Supplier/read" class="btn btn-secondary">
+            <a href="<?= base_url(); ?>Department/read" class="btn btn-secondary">
                Add New
             </a>
          </div>
@@ -34,23 +34,19 @@
             <table id="example" class="table table-striped table-bordered" style="width:100%">
                <thead>
                   <tr>
-                     <th>Name</th>
-                     <th>Phone</th>
-                     <th>Address</th>
+                     <th>Department Name</th>
+                     <th>Description</th>
                      <th></th>
                   </tr>
                </thead>
                <tbody>
-                  <?php foreach ($this->M_supplier->get_suppliers() as $row) { ?>
+                  <?php foreach ($this->M_department->get_departments() as $row) { ?>
                      <tr>
                         <td>
-                           <?= $row['name']; ?>
+                           <?= $row['department_name']; ?>
                         </td>
                         <td>
-                           <?= $row['phone']; ?>
-                        </td>
-                        <td>
-                           <?= $row['address']; ?>
+                           <?= $row['description']; ?>
                         </td>
                         <td>
                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
@@ -60,13 +56,13 @@
                                  <ul class="dropdown-menu">
 
                                     <li>
-                                       <a href="<?= base_url(); ?>Supplier/read/<?= $row['supplier_id']; ?>"
+                                       <a href="<?= base_url(); ?>Department/read/<?= $row['department_id']; ?>"
                                           class="dropdown-item">
                                           Edit
                                        </a>
                                     </li>
                                     <li>
-                                       <a href="<?= base_url(); ?>Supplier/delete/<?= $row['supplier_id']; ?>"
+                                       <a href="<?= base_url(); ?>Department/delete/<?= $row['department_id']; ?>"
                                           class="dropdown-item">
                                           Delete
                                        </a>

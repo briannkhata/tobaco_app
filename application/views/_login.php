@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TOBACO BALE SCANNER |
+    <title>Tobaco Tracker |
         <?= $page_title; ?>
     </title>
     <!--favicon-->
