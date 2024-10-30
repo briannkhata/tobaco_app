@@ -19,31 +19,24 @@ class Client extends CI_Controller
 	}
 	function get_client_form_data()
 	{
-		$data['name'] = $this->input->post('name');
+		$data['trading_name'] = $this->input->post('trading_name');
 		$data['address'] = $this->input->post('address');
-		$data['phone'] = $this->input->post('phone');
+		$data['primary_contact'] = $this->input->post('primary_contact');
+		$data['other_contact'] = $this->input->post('other_contact');
+		$data['branch_id'] = $this->input->post('branch_id');
 		return $data;
 	}
 	
-	function save_client()
-	{
-		$data = $this->get_client_form_data();
-		$this->db->insert('tbl_clients', $data);
-		$client_id = $this->db->insert_id();
-		$response = array(
-			'status' => 'success',
-			'client_id' => $client_id
-		);
-		return json_encode($response);
-	}
-
 	function get_client_db_data($update_id)
 	{
 		$query = $this->M_client->get_client_by_id($update_id);
 		foreach ($query as $row) {
-			$data['name'] = $row['name'];
+			$data['trading_name'] = $row['trading_name'];
 			$data['address'] = $row['address'];
-			$data['phone'] = $row['phone'];
+			$data['primary_contact'] = $row['primary_contact'];
+			$data['other_contact'] = $row['other_contact'];
+			$data['branch_id'] = $row['branch_id'];
+
 		}
 		return $data;
 	}

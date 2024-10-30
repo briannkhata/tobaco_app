@@ -1,7 +1,7 @@
 <?php
 defined("BASEPATH") or exit("No direct script access allowed");
 
-class Product extends CI_Controller
+class Bale extends CI_Controller
 {
     function __construct()
     {
@@ -13,26 +13,23 @@ class Product extends CI_Controller
 
     function index()
     {
-        $data["page_title"] = "Product List";
-        $this->load->view("product/_product_list", $data);
+        $data["page_title"] = "bales";
+        $this->load->view("bale/_bale_list", $data);
     }
 
     function get_form_data()
     {
-        $data["name"] = $this->input->post("name");
+        $data["client_id"] = $this->input->post("client_id");
         $data["barcode"] = $this->input->post("barcode");
         $data["category_id"] = $this->input->post("category_id");
-        $data["desc"] = $this->input->post("desc");
-        $data["brand_id"] = $this->input->post("brand_id");
-        $data["selling_price"] = $this->input->post("selling_price");
-        $data["unit_id"] = $this->input->post("unit_id");
-        $data["reorder_level"] = $this->input->post("reorder_level");
+        $data["total_weight"] = $this->input->post("total_weight");
+        $data["unique_number"] = $this->input->post("unique_number");
         return $data;
     }
 
     function get_db_data($update_id)
     {
-        $query = $this->M_product->get_product_by_id($update_id);
+        $query = $this->M_bale->get_bale_by_id($update_id);
         foreach ($query as $row) {
             $data["name"] = $row["name"];
             $data["barcode"] = $row["barcode"];
@@ -58,8 +55,8 @@ class Product extends CI_Controller
         } else {
             $data = $this->get_form_data();
         }
-        $data["page_title"] = "Create product";
-        $this->load->view("product/_add_product", $data);
+        $data["page_title"] = "Create bale";
+        $this->load->view("bale/_add_bale", $data);
     }
 
     function save()
@@ -69,22 +66,22 @@ class Product extends CI_Controller
         if (isset($update_id)) {
             $data["modified_by"] = $this->session->userdata("user_id");
             $data["modified_date"] = date("Y-m-d");
-            $this->db->where("product_id", $update_id);
-            $this->db->update("tbl_products", $data);
+            $this->db->where("bale_id", $update_id);
+            $this->db->update("tbl_bales", $data);
 
             $this->sync_quantities_by_shop($update_id);
         } else {
-            $this->db->insert("tbl_products", $data);
-            $product_id = $this->db->insert_id();
-            $this->sync_quantities_by_shop($product_id);
+            $this->db->insert("tbl_bales", $data);
+            $bale_id = $this->db->insert_id();
+            $this->sync_quantities_by_shop($bale_id);
         }
         
         if ($update_id != ""):
-            redirect("Product");
+            redirect("bale");
         else:
-            redirect("Product/read");
+            redirect("bale/read");
         endif;
-        $this->session->set_flashdata("message", "Product saved successfully!");
+        $this->session->set_flashdata("message", "bale saved successfully!");
     }
 
     function delete($param = "")
@@ -92,20 +89,20 @@ class Product extends CI_Controller
         $data["deleted"] = 1;
         $data["deleted_by"] = $this->session->userdata("user_id");
         $data["date_deleted"] = date("Y-m-d");
-        $this->db->where("product_id", $param);
-        $this->db->update("tbl_products", $data);
-        $this->session->set_flashdata("message", "Product Removed!");
-        redirect("Product");
+        $this->db->where("bale_id", $param);
+        $this->db->update("tbl_bales", $data);
+        $this->session->set_flashdata("message", "bale Removed!");
+        redirect("bale");
     }
 
-    function sync_quantities_by_shop($product_id)
+    function sync_quantities_by_shop($bale_id)
     {
         $shops = $this->M_shop->get_shops();
         foreach ($shops as $shop) {
-            $qty_exists = $this->M_move->get_shop_quantities($product_id, $shop['shop_id']);
+            $qty_exists = $this->M_move->get_shop_quantities($bale_id, $shop['shop_id']);
             if (!$qty_exists) {
                 $data = array(
-                    "product_id" => $product_id,
+                    "bale_id" => $bale_id,
                     "shop_id" => $shop['shop_id'],
                     "qty" => 0
                 );
@@ -115,10 +112,10 @@ class Product extends CI_Controller
 
         $whs = $this->M_warehouse->get_warehouses();
         foreach ($whs as $wh) {
-            $qty_exists = $this->M_move->get_warehouse_quantities($product_id, $wh['warehouse_id']);
+            $qty_exists = $this->M_move->get_warehouse_quantities($bale_id, $wh['warehouse_id']);
             if (!$qty_exists) {
                 $data = array(
-                    "product_id" => $product_id,
+                    "bale_id" => $bale_id,
                     "warehouse_id" => $wh['warehouse_id'],
                     "qty" => 0
                 );
@@ -126,10 +123,10 @@ class Product extends CI_Controller
             }
         }
     }
-    function search_product()
+    function search_bale()
     {
         $barcode = $this->input->post('barcode');
-        $results = $this->M_product->searchProducts($barcode);
+        $results = $this->M_bale->searchbales($barcode);
         echo json_encode($results);
     }
 

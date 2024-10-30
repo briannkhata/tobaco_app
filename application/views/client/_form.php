@@ -26,27 +26,43 @@
                   <hr>
                   <form class="row g-3" action="<?= base_url(); ?>Client/save" method="POST">
                      <div class="col-md-12">
-                        <label for="input1" class="form-label">Name</label>
-                        <input type="text" name="name" class="form-control"
-                           value="<?php if (!empty($name)) {
-                              echo $name;
-                           } ?>" required="">
+                        <label for="input1" class="form-label">Trading Name</label>
+                        <input type="text" name="trading_name" class="form-control" value="<?php if (!empty($trading_name)) {
+                           echo $trading_name;
+                        } ?>" required="">
                      </div>
 
                      <div class="col-md-12">
                         <label for="input1" class="form-label">Address</label>
-                        <input type="text" name="address" class="form-control"
-                           value="<?php if (!empty($address)) {
-                              echo $address;
-                           } ?>" required="">
+                        <input type="text" name="address" class="form-control" value="<?php if (!empty($address)) {
+                           echo $address;
+                        } ?>" required="">
+                     </div>
+
+                     <div class="col-md-6">
+                        <label for="input1" class="form-label">Primary Contact</label>
+                        <input type="text" name="primary_contact" class="form-control" value="<?php if (!empty($primary_contact)) {
+                           echo $primary_contact;
+                        } ?>">
+                     </div>
+
+                     <div class="col-md-6">
+                        <label for="input1" class="form-label">Primary Contact</label>
+                        <input type="text" name="other_contact" class="form-control" value="<?php if (!empty($other_contact)) {
+                           echo $other_contact;
+                        } ?>">
                      </div>
 
                      <div class="col-md-12">
-                        <label for="input1" class="form-label">Phone</label>
-                        <input type="text" name="phone" class="form-control"
-                           value="<?php if (!empty($phone)) {
-                              echo $phone;
-                           } ?>">
+                        <label for="input1" class="form-label">Branch</label>
+                        <select class="form-control" name="branch_id">
+                           <option selected disabled>option</option>
+                           <?php foreach ($this->M_branch->get_branches() as $row) { ?>
+                              <option <?php if ($branch_id == $row['branch_id'])
+                                 echo 'selected'; ?>
+                                 value="<?= $row['branch_id']; ?>"><?= $row['branch_name']; ?></option>
+                           <?php } ?>
+                        </select>
                      </div>
                      <div class="col-md-12">
                         <?php if (isset($update_id)) { ?>

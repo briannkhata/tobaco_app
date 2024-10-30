@@ -1,51 +1,28 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class M_product extends CI_Model
+class M_bale extends CI_Model
 {
     function __construct()
     {
         parent::__construct();
     }
 
-    function get_all_products()
+    function get_all_bales()
     {
         $this->db->where('deleted', 0);
-        $this->db->from('tbl_products');
-        $this->db->order_by('product_id', 'desc');
+        $this->db->from('tbl_bales');
+        $this->db->order_by('bale_id', 'desc');
         $query = $this->db->get();
         return $query->result_array();
     }
 
 
-    function get_products_pos()
-    {
-        $current_date = date('Y-m-d');
-        $this->db->where('deleted', 0);
-        //$this->db->where('qty > reorder_level');
-        $this->db->where('expiry_date >=', $current_date);
-        $this->db->from('tbl_products');
-        $query = $this->db->get();
-        return $query->result_array();
-    }
-
-    function get_expiring_products()
-    {
-        $current_date = date('Y-m-d');
-        $expiry_date = date('Y-m-d', strtotime('+2 weeks'));
-        $this->db->where('deleted', 0);
-        $this->db->where('expiry_date >=', $current_date);
-        $this->db->where('expiry_date <=', $expiry_date);
-        $this->db->from('tbl_products');
-        $query = $this->db->get();
-        return $query->result_array();
-    }
-
-    function get_unit_id($product_id)
+    function get_unit_id($bale_id)
     {
         $this->db->select('unit_id');
-        $this->db->where('product_id', $product_id);
-        $query = $this->db->get('tbl_products');
+        $this->db->where('bale_id', $bale_id);
+        $query = $this->db->get('tbl_bales');
         if ($query->num_rows() > 0) {
             $result = $query->row();
             return $result->unit_id;
@@ -56,24 +33,24 @@ class M_product extends CI_Model
 
 
 
-    function get_expired_products()
+    function get_expired_bales()
     {
         $yesterday_date = date('Y-m-d', strtotime('-1 day'));
         $this->db->where('deleted', 0);
         $this->db->where('expiry_date <=', $yesterday_date);
-        $this->db->from('tbl_products');
+        $this->db->from('tbl_bales');
         $query = $this->db->get();
         return $query->result_array();
     }
 
-    function get_new_products()
+    function get_new_bales()
     {
         $current_date = date('Y-m-d');
         $two_weeks_from_now_date = date('Y-m-d', strtotime('+2 weeks'));
         $this->db->where('deleted', 0);
         $this->db->where('date_added >=', $current_date);
         $this->db->where('date_added <=', $two_weeks_from_now_date);
-        $this->db->from('tbl_products');
+        $this->db->from('tbl_bales');
         $query = $this->db->get();
         return $query->result_array();
     }
@@ -151,31 +128,31 @@ class M_product extends CI_Model
         }
     }
 
-    function get_products_running_low()
+    function get_bales_running_low()
     {
         $this->db->where('deleted', 0);
         $this->db->where('expiry_date >', date('Y-m-d'));
         //$this->db->where('qty <= reorder_level');
-        $this->db->from('tbl_products');
+        $this->db->from('tbl_bales');
         $query = $this->db->get();
         return $query->result_array();
     }
 
-    function get_depleted_products()
+    function get_depleted_bales()
     {
         $this->db->where('deleted', 0);
         $this->db->where('expiry_date >', date('Y-m-d'));
         //$this->db->where('qty <= 0');
-        $this->db->from('tbl_products');
+        $this->db->from('tbl_bales');
         $query = $this->db->get();
         return $query->result_array();
     }
 
 
-    function get_shop_qty($product_id, $shop_id)
+    function get_shop_qty($bale_id, $shop_id)
     {
         $this->db->select('qty');
-        $this->db->where('product_id', $product_id);
+        $this->db->where('bale_id', $bale_id);
         $this->db->where('shop_id', $shop_id);
         $query = $this->db->get('tbl_quantities');
         if ($query->num_rows() > 0) {
@@ -186,10 +163,10 @@ class M_product extends CI_Model
         }
     }
 
-    function get_qty($product_id)
+    function get_qty($bale_id)
     {
         $this->db->select('qty');
-        $this->db->where('product_id', $product_id);
+        $this->db->where('bale_id', $bale_id);
         $query = $this->db->get('tbl_quantities');
         if ($query->num_rows() > 0) {
             $result = $query->row();
@@ -199,10 +176,10 @@ class M_product extends CI_Model
         }
     }
 
-    function get_product_in_cart($product_id, $user_id, $client_id, $shop_id)
+    function get_bale_in_cart($bale_id, $user_id, $client_id, $shop_id)
     {
         $this->db->select('*');
-        $this->db->where('product_id', $product_id);
+        $this->db->where('bale_id', $bale_id);
         $this->db->where('user_id', $user_id);
         $this->db->where('client_id', $client_id);
         $this->db->where('shop_id', $shop_id);
@@ -210,10 +187,10 @@ class M_product extends CI_Model
         return $query;
     }
 
-    function get_cart_id_by_product_id($product_id, $user_id, $client_id, $shop_id)
+    function get_cart_id_by_bale_id($bale_id, $user_id, $client_id, $shop_id)
     {
         $this->db->select('cart_id');
-        $this->db->where('product_id', $product_id);
+        $this->db->where('bale_id', $bale_id);
         $this->db->where('user_id', $user_id);
         $this->db->where('client_id', $client_id);
         $this->db->where('shop_id', $shop_id);
@@ -293,22 +270,22 @@ class M_product extends CI_Model
         return $result;
     }
 
-    function searchProducts($barcode)
+    function searchbales($barcode)
     {
-        $this->db->select('product_id, barcode,selling_price, unit_id,category_id, name, `desc`');
-        $this->db->from('tbl_products');
+        $this->db->select('bale_id, barcode,selling_price, unit_id,category_id, name, `desc`');
+        $this->db->from('tbl_bales');
         $this->db->like('barcode', $barcode);
         $this->db->where('deleted', 0);
         $query = $this->db->get();
         $results = $query->result_array();
         if (empty($results)) {
-            $allProductsQuery = $this->db->get('tbl_products');
-            return $allProductsQuery->result_array();
+            $allbalesQuery = $this->db->get('tbl_bales');
+            return $allbalesQuery->result_array();
         }
         return $results;
     }
 
-    function get_product_by_cart_id($cart_id)
+    function get_bale_by_cart_id($cart_id)
     {
         $this->db->where('cart_id', $cart_id);
         $this->db->from('tbl_cart_sales');
@@ -341,20 +318,20 @@ class M_product extends CI_Model
             ->result_array();
     }
 
-    function get_product_by_barcode($barcode)
+    function get_bale_by_barcode($barcode)
     {
         $this->db->where('deleted', 0);
         $this->db->where('barcode', $barcode);
-        $this->db->from('tbl_products');
+        $this->db->from('tbl_bales');
         $query = $this->db->get();
         return $query->result_array();
     }
 
-    function get_price($product_id)
+    function get_price($bale_id)
     {
         $this->db->select('selling_price');
-        $this->db->where('product_id', $product_id);
-        $query = $this->db->get('tbl_products');
+        $this->db->where('bale_id', $bale_id);
+        $query = $this->db->get('tbl_bales');
         if ($query->num_rows() > 0) {
             $result = $query->row();
             return $result->selling_price;
@@ -363,22 +340,22 @@ class M_product extends CI_Model
         }
     }
 
-    function get_products_by_category($category_id)
+    function get_bales_by_category($category_id)
     {
         $this->db->where('deleted', 0);
         $this->db->where('category_id', $category_id);
-        $this->db->from('tbl_products');
+        $this->db->from('tbl_bales');
         $query = $this->db->get();
         return $query->result_array();
     }
 
 
 
-    function get_products()
+    function get_bales()
     {
         $this->db->where('deleted', 0);
-        $this->db->from('tbl_products');
-        $this->db->order_by('product_id', 'DESC');
+        $this->db->from('tbl_bales');
+        $this->db->order_by('bale_id', 'DESC');
         $query = $this->db->get();
         return $query->result_array();
     }
@@ -399,8 +376,8 @@ class M_product extends CI_Model
     {
         $this->db->where('deleted', 0);
         $this->db->where('dispose_state', 'pending');
-        $this->db->order_by('product_id', 'DESC');
-        $query = $this->db->get('tbl_products');
+        $this->db->order_by('bale_id', 'DESC');
+        $query = $this->db->get('tbl_bales');
         return $query->result_array();
     }
 
@@ -408,11 +385,11 @@ class M_product extends CI_Model
 
 
 
-    function get_cost_price($product_id)
+    function get_cost_price($bale_id)
     {
         $this->db->select('cost_price');
-        $this->db->where('product_id', $product_id);
-        $result = $this->db->get('tbl_products')->row();
+        $this->db->where('bale_id', $bale_id);
+        $result = $this->db->get('tbl_bales')->row();
         if ($result == NULL) {
             return "";
         } else {
@@ -420,11 +397,11 @@ class M_product extends CI_Model
         }
     }
 
-    function get_deleted_or_not($product_id)
+    function get_deleted_or_not($bale_id)
     {
         $this->db->select('deleted');
-        $this->db->where('product_id', $product_id);
-        $result = $this->db->get('tbl_products')->row();
+        $this->db->where('bale_id', $bale_id);
+        $result = $this->db->get('tbl_bales')->row();
         if ($result == NULL) {
             return "";
         } else {
@@ -432,11 +409,11 @@ class M_product extends CI_Model
         }
     }
 
-    function get_barcode($product_id)
+    function get_barcode($bale_id)
     {
         $this->db->select('barcode');
-        $this->db->where('product_id', $product_id);
-        $result = $this->db->get('tbl_products')->row();
+        $this->db->where('bale_id', $bale_id);
+        $result = $this->db->get('tbl_bales')->row();
         if ($result == NULL) {
             return "";
         } else {
@@ -444,11 +421,11 @@ class M_product extends CI_Model
         }
     }
 
-    function get_name($product_id)
+    function get_name($bale_id)
     {
         $this->db->select('name');
-        $this->db->where('product_id', $product_id);
-        $result = $this->db->get('tbl_products')->row();
+        $this->db->where('bale_id', $bale_id);
+        $result = $this->db->get('tbl_bales')->row();
         if ($result == NULL) {
             return "";
         } else {
@@ -457,10 +434,10 @@ class M_product extends CI_Model
     }
 
 
-    function get_product_by_id($product_id)
+    function get_bale_by_id($bale_id)
     {
-        $this->db->where('product_id', $product_id);
-        $query = $this->db->get('tbl_products');
+        $this->db->where('bale_id', $bale_id);
+        $query = $this->db->get('tbl_bales');
         return $query->result_array();
     }
 

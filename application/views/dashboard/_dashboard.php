@@ -15,7 +15,7 @@
                   <div class="d-flex align-items-center justify-content-between mt-3">
                      <div class="">
                         <h4 class="mb-0 fw-bold">
-                           <?//= count($this->M_product->get_all_products()); ?>
+                           <?= count($this->M_client->get_clients()); ?>
                         </h4>
                         <div class="d-flex align-items-center justify-content-start gap-1 text-success mt-3">
                         </div>
@@ -33,7 +33,7 @@
                   </div>
                   <div class="d-flex align-items-center justify-content-between mt-3">
                      <div class="">
-                        <h4 class="mb-0 fw-bold"> <?//= count($this->M_product->get_expiring_products()); ?></h4>
+                        <h4 class="mb-0 fw-bold"> <?= count($this->M_branch->get_branches()); ?></h4>
                         <div class="d-flex align-items-center justify-content-start gap-1 text-success mt-3">
                         </div>
                      </div>
@@ -50,7 +50,7 @@
                   </div>
                   <div class="d-flex align-items-center justify-content-between mt-3">
                      <div class="">
-                        <h4 class="mb-0 fw-bold"><?//= count($this->M_product->get_new_products()); ?></h4>
+                        <h4 class="mb-0 fw-bold"><?= count($this->M_category->get_categories()); ?></h4>
                         <div class="d-flex align-items-center justify-content-start gap-1 text-success mt-3">
                         </div>
                      </div>

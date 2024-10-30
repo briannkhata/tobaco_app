@@ -60,4 +60,29 @@ class M_branch extends CI_Model
         }
     }
 
+    function get_primary_contact($branch_id)
+    {
+        $this->db->select('primary_contact');
+        $this->db->where('branch_id', $branch_id);
+        $result = $this->db->get('tbl_branches')->row();
+        if ($result == NULL) {
+            return "";
+        } else {
+            return $result->primary_contact;
+        }
+    }
+
+    function get_other_contact($branch_id)
+    {
+        $this->db->select('other_contact');
+        $this->db->where('branch_id', $branch_id);
+        $result = $this->db->get('tbl_branches')->row();
+        if ($result == NULL) {
+            return "";
+        } else {
+            return $result->other_contact;
+        }
+    }
+
+
 }

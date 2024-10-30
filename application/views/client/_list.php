@@ -34,8 +34,10 @@
             <table id="example" class="table table-striped table-bordered" style="width:100%">
                <thead>
                   <tr>
-                     <th>Name</th>
-                     <th>Phone</th>
+                     <th>Trading Name</th>
+                     <th>Primary Contact</th>
+                     <th>Other Contact</th>
+                     <th>Branch</th>
                      <th>Address</th>
                      <th></th>
                   </tr>
@@ -44,14 +46,22 @@
                   <?php foreach ($this->M_client->get_clients() as $row) { ?>
                      <tr>
                         <td>
-                           <?= $row['name']; ?>
+                           <?= $row['trading_name']; ?>
                         </td>
                         <td>
-                           <?= $row['phone']; ?>
+                           <?= $row['primary_contact']; ?>
+                        </td>
+                        <td>
+                           <?= $row['other_contact']; ?>
+                        </td>
+
+                        <td>
+                           <?= $this->M_branch->get_branch_name($row['branch_id']); ?>
                         </td>
                         <td>
                            <?= $row['address']; ?>
                         </td>
+
                         <td>
                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                               <div class="btn-group" role="group">
