@@ -25,9 +25,12 @@ class User extends CI_Controller
 
 	function get_user_form_data(){
 		$data['name'] = $this->input->post('name');
-		$data['phone'] = $this->input->post('phone');
+		$data['primary_contact'] = $this->input->post('primary_contact');
+		$data['password'] = md5($this->input->post('password'));
 		$data['username'] = $this->input->post('username');
 		$data['role'] = $this->input->post('role');
+		$data['branch_id'] = $this->input->post('branch_id');
+		$data['department_id'] = $this->input->post('department_id');
 		$data['added_by'] = $this->session->userdata('user_id');
 		return $data;
     }
@@ -36,9 +39,11 @@ class User extends CI_Controller
 		$query = $this->M_user->get_user_by_id($update_id);
 		foreach ($query as $row) {
 			$data['name'] = $row['name'];
-			$data['phone'] = $row['phone'];
+			$data['primary_contact'] = $row['primary_contact'];
 			$data['username'] = $row['username'];
 			$data['role'] = $row['role'];
+			$data['branch_id'] = $row['branch_id'];
+			$data['department_id'] = $row['department_id'];
 		}
 		return $data;
 	}

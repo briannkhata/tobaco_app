@@ -24,87 +24,62 @@
                      </div>
                   <?php } ?>
                   <hr>
-                  <form action="<?= base_url(); ?>Product/save" class="row g-3" method="post">
+                  <form action="<?= base_url(); ?>Bale/save" class="row g-3" method="post">
 
-                     <div class="col-md-3">
+                     <div class="col-md-6">
+                        <label for="input1" class="form-label">Client</label>
+                        <select class="form-control" name="branch_id">
+                           <option selected disabled>option</option>
+                           <?php foreach ($this->M_client->get_clients() as $row) { ?>
+                              <option <?php if ($client_id == $row['client_id'])
+                                 echo 'selected'; ?>
+                                 value="<?= $row['client_id']; ?>"><?= $row['trading_name']; ?></option>
+                           <?php } ?>
+                        </select>
+                     </div>
+
+                     <div class="col-md-6">
+                        <label for="input1" class="form-label">Category</label>
+                        <select class="form-control" name="category_id">
+                           <option selected disabled>option</option>
+                           <?php foreach ($this->M_category->get_categories() as $row) { ?>
+                              <option <?php if ($category_id == $row['category_id'])
+                                 echo 'selected'; ?>
+                                 value="<?= $row['category_id']; ?>"><?= $row['category_name']; ?></option>
+                           <?php } ?>
+                        </select>
+                     </div>
+
+                     <div class="col-md-4">
+                        <label class="control-label">Weight</label>
+                        <input type="text" name="total_weight" class="form-control" value="<?php if (!empty($total_weight)) {
+                           echo $total_weight;
+                        } ?>">
+                     </div>
+
+                     <div class="col-md-4">
+                        <label class="control-label">Unique Number</label>
+                        <input type="text" name="total_weight" class="form-control" value="<?php if (!empty($unique_number)) {
+                           echo $unique_number;
+                        } ?>">
+                     </div>
+
+                     <div class="col-md-4">
                         <label class="control-label">Barcode</label>
                         <input type="text" name="barcode" class="form-control" value="<?php if (!empty($barcode)) {
                            echo $barcode;
                         } ?>">
                      </div>
-                     <div class="col-md-9">
-                        <label class="control-label">Product Name</label>
-                        <input type="text" name="name" class="form-control" value="<?php if (!empty($name)) {
-                           echo $name;
-                        } ?>" required="">
-                     </div>
+
+
                      <div class="col-md-12">
                         <label class="control-label">Description</label>
-                        <input type="text" name="desc" class="form-control" value="<?php if (!empty($desc)) {
-                           echo $desc;
-                        } ?>" required="">
+                        <textarea name="description" class="form-control">
+                           <?php if (!empty($description)) {
+                              echo $description;
+                           } ?>
+                        </textarea>
                      </div>
-
-                     <div class="col-md-4">
-                        <label class="control-label">Category</label>
-                        <select id="cat_search" class="form-control" name="category_id" required="">
-                           <option selected="" disabled="">----</option>
-                           <?php foreach ($this->M_category->get_categories() as $row) { ?>
-                              <option <?php if ($category_id == $row['category_id'])
-                                 echo 'selected'; ?>
-                                 value="<?= $row['category_id']; ?>">
-                                 <?= $row['category']; ?>
-                              </option>
-                           <?php } ?>
-                        </select>
-                     </div>
-
-                     <div class="col-md-4">
-                        <label class="control-label">Brand</label>
-                        <select class="form-control" name="brand_id" required="">
-                           <option selected="" disabled="">----</option>
-                           <?php foreach ($this->M_brand->get_brands() as $row) { ?>
-                              <option <?php if ($brand_id == $row['brand_id'])
-                                 echo 'selected'; ?>
-                                 value="<?= $row['brand_id']; ?>">
-                                 <?= $row['brand_name']; ?>
-                              </option>
-                           <?php } ?>
-                        </select>
-                     </div>
-
-                     <div class="col-md-4">
-                        <label class="control-label">Unit Type</label>
-                        <select class="form-control" name="unit_id" required="">
-                           <option selected="" disabled="">----</option>
-                           <?php foreach ($this->M_unit->get_units() as $row) { ?>
-                              <option <?php if ($unit_id == $row['unit_id'])
-                                 echo 'selected'; ?>
-                                 value="<?= $row['unit_id']; ?>">
-                                 <?= $row['unit_type']; ?>
-                              </option>
-                           <?php } ?>
-                        </select>
-                     </div>
-
-
-
-                     <div class="col-md-6">
-                        <label class="control-label">Selling Price</label>
-                        <input type="text" name="selling_price" class="form-control" value="<?php if (!empty($selling_price)) {
-                           echo $selling_price;
-                        } ?>">
-                     </div>
-
-
-                     <div class="col-md-6">
-                        <label class="control-label"> Order Level In Days</label>
-                        <input type="text" name="reorder_level" class="form-control" value="<?php if (!empty($reorder_level)) {
-                           echo $reorder_level;
-                        } ?>">
-                     </div>
-
-
 
                      <div class="col-md-12">
                         <?php if (isset($update_id)) { ?>

@@ -68,7 +68,7 @@
                   <div class="d-flex align-items-center justify-content-between mt-3">
                      <div class="">
                         <h4 class="mb-0 fw-bold">
-                           <?//= count($this->M_product->get_expired_products()); ?>
+                           <?= count($this->M_bale->get_bales()); ?>
                         </h4>
                         <div class="d-flex align-items-center justify-content-start gap-1 text-danger mt-3">
                         </div>

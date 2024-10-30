@@ -38,9 +38,9 @@
                      </div>
 
                      <div class="col-md-6 ">
-                        <label class="control-label">Phone</label>
-                        <input type="tel" name="phone" class="form-control" value="<?php if (!empty($phone)) {
-                           echo $phone;
+                        <label class="control-label">Primary Contact</label>
+                        <input type="text" name="primary_contact" class="form-control" value="<?php if (!empty($primary_contact)) {
+                           echo $primary_contact;
                         } ?>">
                      </div>
                      <div class="col-md-6 ">
@@ -62,9 +62,31 @@
                      </div>
                      <div class="col-md-6">
                         <label class="control-label">Password</label>
-                        <input type="password" name="password" class="form-control" value="<?php if (!empty($password)) {
-                           echo $password;
-                        } ?>">
+                        <input type="password" name="password" class="form-control">
+                     </div>
+
+                     <div class="col-md-6">
+                        <label for="input1" class="form-label">Branch</label>
+                        <select class="form-control" name="branch_id">
+                           <option selected disabled>option</option>
+                           <?php foreach ($this->M_branch->get_branches() as $row) { ?>
+                              <option <?php if ($branch_id == $row['branch_id'])
+                                 echo 'selected'; ?>
+                                 value="<?= $row['branch_id']; ?>"><?= $row['branch_name']; ?></option>
+                           <?php } ?>
+                        </select>
+                     </div>
+
+                     <div class="col-md-6">
+                        <label for="input1" class="form-label">Department</label>
+                        <select class="form-control" name="department_id">
+                           <option selected disabled>option</option>
+                           <?php foreach ($this->M_department->get_departments() as $row) { ?>
+                              <option <?php if ($department_id == $row['department_id'])
+                                 echo 'selected'; ?>
+                                 value="<?= $row['department_id']; ?>"><?= $row['department_name']; ?></option>
+                           <?php } ?>
+                        </select>
                      </div>
 
 

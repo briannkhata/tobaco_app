@@ -41,9 +41,12 @@
                   <thead>
                      <tr>
                         <th>Name</th>
-                        <th>Phone</th>
+                        <th>Gender</th>
+                        <th>Primary Contact</th>
                         <th>Username</th>
                         <th>Role</th>
+                        <th>Branch</th>
+                        <th>Department</th>
                         <th></th>
                      </tr>
                   </thead>
@@ -56,13 +59,22 @@
                            </td>
 
                            <td>
-                              <?= $row['phone'] ?>
+                              <?= $row['gender'] ?>
+                           </td>
+                           <td>
+                              <?= $row['primary_contact'] ?>
                            </td>
                            <td>
                               <?= $row['username'] ?>
                            </td>
                            <td>
                               <?= $row['role'] ?>
+                           </td>
+                           <td>
+                              <?= $this->M_branch->get_branch_name($row['branch_id']) ?>
+                           </td>
+                           <td>
+                              <?= $this->M_department->get_department_name($row['department_id']) ?>
                            </td>
 
                            <td>

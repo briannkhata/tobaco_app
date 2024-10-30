@@ -26,7 +26,7 @@ class M_branch extends CI_Model
 
     function get_branch_name($branch_id)
     {
-        $this->db->select('name');
+        $this->db->select('branch_name');
         $this->db->where('branch_id', $branch_id);
         $result = $this->db->get('tbl_branches')->row();
         if ($result == NULL) {

@@ -46,12 +46,12 @@
                               <th>Unique Number</th>
                               <th>Barcode</th>
                               <th>Category</th>
+                              <th>Decription</th>
                               <th></th>
                            </tr>
                         </thead>
                         <tbody>
                            <?php
-                           $count = 1;
                            foreach ($this->M_bale->get_bales() as $row): ?>
                               <tr>
 
@@ -71,7 +71,9 @@
                                  <td>
                                     <?= $this->M_category->get_category_name($row['category_id']); ?>
                                  </td>
-
+                                 <td>
+                                    <?= $row['description'] ?>
+                                 </td>
                                  <td>
                                     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                        <div class="btn-group" role="group">

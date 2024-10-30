@@ -138,14 +138,7 @@ $autoload['model'] = array(
     "M_category",
     "M_branch",
     "M_report",
-    "M_shop",
-    "M_shift",
     "M_department",
     "M_role",
     "M_client",
-    "M_unit",
-    "M_payment_type",
-    "M_move",
-    "M_receive",
-    "M_brand"
 );
