@@ -29,7 +29,7 @@ class User extends CI_Controller
 		$data['primary_contact'] = $this->input->post('primary_contact');
 		$data['password'] = md5($this->input->post('password'));
 		$data['username'] = $this->input->post('username');
-		$data['role'] = $this->input->post('role');
+		// $data['role'] = $this->input->post('role');
 		$data['branch_id'] = $this->input->post('branch_id');
 		$data['department_id'] = $this->input->post('department_id');
 		$data['added_by'] = $this->session->userdata('user_id');
@@ -43,7 +43,7 @@ class User extends CI_Controller
 			$data['name'] = $row['name'];
 			$data['primary_contact'] = $row['primary_contact'];
 			$data['username'] = $row['username'];
-			$data['role'] = $row['role'];
+			// $data['role'] = $row['role'];
 			$data['branch_id'] = $row['branch_id'];
 			$data['department_id'] = $row['department_id'];
 		}
@@ -78,8 +78,8 @@ class User extends CI_Controller
 		$data['password'] = MD5($this->input->post('password'));
 		$this->db->where('user_id', $this->session->userdata('user_id'));
 		$this->db->update('tbl_users', $data);
-		redirect('User');
 		$this->session->set_flashdata('message', 'Password changed successfully!');
+		redirect('User');
 	}
 
 	function save()
@@ -128,20 +128,5 @@ class User extends CI_Controller
 		redirect('User');
 	}
 
-
-	function save_settings()
-	{
-		$id = $this->input->post('id');
-		$data['company'] = $this->input->post('company');
-		$data['email'] = $this->input->post('email');
-		$data['alt_email'] = $this->input->post('alt_email');
-		$data['phone'] = $this->input->post('phone');
-		$data['alt_phone'] = $this->input->post('alt_phone');
-		$data['address'] = $this->input->post('address');
-		$this->db->where('id', $id);
-		$this->db->update('tbl_settings', $data);
-		$this->session->set_flashdata('message', 'Settings Successfully!');
-		redirect('User/config');
-	}
 
 }

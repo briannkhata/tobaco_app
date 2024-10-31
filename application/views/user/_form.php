@@ -37,30 +37,30 @@
                         } ?>">
                      </div>
 
-                     <div class="col-md-6 ">
+                     <div class="col-md-4">
                         <label class="control-label">Primary Contact</label>
                         <input type="text" name="primary_contact" class="form-control" value="<?php if (!empty($primary_contact)) {
                            echo $primary_contact;
                         } ?>">
                      </div>
-                     <div class="col-md-6 ">
+                     <!-- <div class="col-md-6 ">
                         <label class="control-label">Role</label>
                         <select id="gender" name="role" class="form-control">
                            <option selected disabled> Role</option>
                            <option <?php if ($role == '0')
                               echo 'selected'; ?> value="0">Admin</option>
                            <option <?php if ($role == '1')
-                              echo 'selected'; ?> value="1">Cashier</option>
+                              echo 'selected'; ?> value="1">Assistant Admin</option>
                         </select>
-                     </div>
+                     </div> -->
 
-                     <div class="col-md-6">
+                     <div class="col-md-4">
                         <label class="control-label">Username</label>
                         <input type="text" name="username" class="form-control" value="<?php if (!empty($username)) {
                            echo $username;
                         } ?>">
                      </div>
-                     <div class="col-md-6">
+                     <div class="col-md-4">
                         <label class="control-label">Password</label>
                         <input type="password" name="password" class="form-control">
                      </div>
