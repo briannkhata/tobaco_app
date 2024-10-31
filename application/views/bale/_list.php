@@ -44,6 +44,7 @@
                               <th>Client</th>
                               <th>Total Weight</th>
                               <th>Unique Number</th>
+                              <th>Price</th>
                               <th>Barcode</th>
                               <th>Category</th>
                               <th>Decription</th>
@@ -61,8 +62,12 @@
                                  <td>
                                     <?= $row['total_weight'] ?>
                                  </td>
+
                                  <td>
                                     <?= $row['unique_number'] ?>
+                                 </td>
+                                 <td>
+                                    <?= $row['price'] ?>
                                  </td>
                                  <td>
                                     <?= $row['barcode'] ?>
@@ -119,21 +124,3 @@
 </main>
 
 <?php $this->load->view('includes/footer.php'); ?>
-<script>
-   $('#searchButton').on('click', function () {
-      performSearch();
-   });
-
-   // Search functionality on input change
-   $('#searchInput').on('input', function () {
-      performSearch();
-   });
-
-   function performSearch() {
-      var searchValue = $('#searchInput').val().toLowerCase();
-      $('table tbody tr').each(function () {
-         var text = $(this).text().toLowerCase();
-         $(this).toggle(text.indexOf(searchValue) !== -1);
-      });
-   }
-</script>

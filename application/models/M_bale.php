@@ -17,6 +17,13 @@ class M_bale extends CI_Model
         return $query->result_array();
     }
 
+    function get_bale_by_id($bale_id)
+    {
+        $this->db->where('bale_id', $bale_id);
+        $query = $this->db->get('tbl_bales');
+        return $query->result_array();
+    }
+
 
     function get_category_id($bale_id)
     {
@@ -26,6 +33,19 @@ class M_bale extends CI_Model
         if ($query->num_rows() > 0) {
             $result = $query->row();
             return $result->category_id;
+        } else {
+            return '';
+        }
+    }
+
+    function get_price($bale_id)
+    {
+        $this->db->select('price');
+        $this->db->where('bale_id', $bale_id);
+        $query = $this->db->get('tbl_bales');
+        if ($query->num_rows() > 0) {
+            $result = $query->row();
+            return $result->price;
         } else {
             return '';
         }

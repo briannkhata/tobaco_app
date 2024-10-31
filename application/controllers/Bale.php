@@ -17,6 +17,13 @@ class Bale extends CI_Controller
         $this->load->view("bale/_list", $data);
     }
 
+    function view($param="")
+    {
+        $data["page_title"] = "Bale Details";
+        $data["bale_id"] = $param;
+        $this->load->view("bale/_details", $data);
+    }
+
     function get_form_data()
     {
         $data["client_id"] = $this->input->post("client_id");
@@ -24,6 +31,8 @@ class Bale extends CI_Controller
         $data["category_id"] = $this->input->post("category_id");
         $data["total_weight"] = $this->input->post("total_weight");
         $data["unique_number"] = $this->input->post("unique_number");
+        $data["description"] = $this->input->post("description");
+        $data["price"] = $this->input->post("price");
         return $data;
     }
 
@@ -36,6 +45,8 @@ class Bale extends CI_Controller
             $data["category_id"] = $row["category_id"];
             $data["total_weight"] = $row["total_weight"];
             $data["unique_number"] = $row["unique_number"];
+            $data["description"] = $row["description"];
+            $data["price"] = $row["price"];
         }
         return $data;
     }
@@ -61,14 +72,14 @@ class Bale extends CI_Controller
         $data = $this->get_form_data();
         $update_id = $this->input->post("update_id", true);
         if (isset($update_id)) {
-            $data["updated_by"] = $this->session->userdata("user_id");
-            $data["date_updated"] = date("Y-m-d");
+            // $data["updated_by"] = $this->session->userdata("user_id");
+            // $data["date_updated"] = date("Y-m-d");
             $this->db->where("bale_id", $update_id);
             $this->db->update("tbl_bales", $data);
 
         } else {
-            $data["added_by"] = $this->session->userdata("user_id");
-            $data["date_added"] = date("Y-m-d");
+            // $data["added_by"] = $this->session->userdata("user_id");
+            // $data["date_added"] = date("Y-m-d");
             $this->db->insert("tbl_bales", $data);
         }
 

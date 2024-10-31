@@ -28,7 +28,7 @@
 
                      <div class="col-md-6">
                         <label for="input1" class="form-label">Client</label>
-                        <select class="form-control" name="branch_id">
+                        <select class="form-control" name="client_id">
                            <option selected disabled>option</option>
                            <?php foreach ($this->M_client->get_clients() as $row) { ?>
                               <option <?php if ($client_id == $row['client_id'])
@@ -50,21 +50,28 @@
                         </select>
                      </div>
 
-                     <div class="col-md-4">
+                     <div class="col-md-3">
                         <label class="control-label">Weight</label>
                         <input type="text" name="total_weight" class="form-control" value="<?php if (!empty($total_weight)) {
                            echo $total_weight;
                         } ?>">
                      </div>
 
-                     <div class="col-md-4">
+                     <div class="col-md-3">
+                        <label class="control-label">Price</label>
+                        <input type="text" name="price" class="form-control" value="<?php if (!empty($price)) {
+                           echo $price;
+                        } ?>">
+                     </div>
+
+                     <div class="col-md-3">
                         <label class="control-label">Unique Number</label>
-                        <input type="text" name="total_weight" class="form-control" value="<?php if (!empty($unique_number)) {
+                        <input type="text" name="unique_number" class="form-control" value="<?php if (!empty($unique_number)) {
                            echo $unique_number;
                         } ?>">
                      </div>
 
-                     <div class="col-md-4">
+                     <div class="col-md-3">
                         <label class="control-label">Barcode</label>
                         <input type="text" name="barcode" class="form-control" value="<?php if (!empty($barcode)) {
                            echo $barcode;
