@@ -3,7 +3,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Home extends CI_Controller
 {
-
 	function __construct()
 	{
 		parent::__construct();
@@ -29,7 +28,7 @@ class Home extends CI_Controller
 				'user_id' => $row->user_id,
 				'email' => $row->username,
 				'role' => $row->role,
-				'user_login'=>1
+				'user_login' => 1
 			];
 			$this->session->set_userdata($data);
 			redirect('Dashboard');
@@ -40,11 +39,12 @@ class Home extends CI_Controller
 		}
 	}
 
-	function logout(){
+	function logout()
+	{
 		session_destroy();
-		$this->load->view('_login');
-		redirect('Home','refresh');
-    }
+		$this->session->set_flashdata('message2', 'Logout Sucessfull');
+		redirect(base_url());
+	}
 
 
 }

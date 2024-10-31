@@ -139,6 +139,5 @@ $autoload['model'] = array(
     "M_branch",
     "M_report",
     "M_department",
-    "M_role",
     "M_client",
 );

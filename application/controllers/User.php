@@ -78,8 +78,8 @@ class User extends CI_Controller
 		$data['password'] = MD5($this->input->post('password'));
 		$this->db->where('user_id', $this->session->userdata('user_id'));
 		$this->db->update('tbl_users', $data);
-		$this->session->set_flashdata('message', 'Password changed successfully!');
-		redirect('User');
+		$this->session->set_flashdata('message2', 'Password changed successfully!');
+		redirect('Home');
 	}
 
 	function save()

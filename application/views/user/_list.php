@@ -52,7 +52,7 @@
                   <tbody>
                      <?php foreach ($this->M_user->get_users() as $row): ?>
                         <tr>
-                         
+
                            <td>
                               <?= $row['name'] ?>
                            </td>

@@ -45,19 +45,41 @@
                     <div class="card rounded-0 m-3 mb-0 border-0 shadow-none">
                         <div class="card-body p-sm-5">
                             <img src="<?= base_url(); ?>assets/images/logo1.png" class="mb-4" width="145" alt="">
+
+                            <?php if ($this->session->flashdata('message2')) {
+                                ?>
+                                <div class="alert alert-border-success alert-dismissible fade show">
+                                    <div class="d-flex align-items-center">
+                                        <div class="font-35 text-danger"><span
+                                                class="material-icons-outlined fs-2">report_gmailerrorred</span>
+                                        </div>
+                                        <div class="ms-3">
+                                            <h6 class="mb-0 text-danger">
+                                                <?= $this->session->flashdata('message2');
+                                                ?>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php
+                            } ?>
+
                             <p class="mb-0">Enter your credentials to access your account</p>
                             <div class="form-body mt-4">
-                                <form class="row g-3" action="<?= base_url();?>Home/login" method="post">
+                                <form class="row g-3" action="<?= base_url(); ?>Home/login" method="post">
 
-                                    <div class="col-12"><label for="inputEmailAddress" class="form-label">Username</label>
+                                    <div class="col-12"><label for="inputEmailAddress"
+                                            class="form-label">Username</label>
                                         <input type="text" class="form-control" id="username" name="username" required>
                                     </div>
 
                                     <div class="col-12">
                                         <label for="inputChoosePassword" class="form-label">Password</label>
                                         <div class="input-group" id="show_hide_password">
-                                            <input type="password" class="form-control" id="password" name="password" required>
-                                            <a href="javascript:;" class="input-group-text bg-transparent"><i class="bi bi-eye-slash-fill"></i></a>
+                                            <input type="password" class="form-control" id="password" name="password"
+                                                required>
+                                            <a href="javascript:;" class="input-group-text bg-transparent"><i
+                                                    class="bi bi-eye-slash-fill"></i></a>
                                         </div>
                                     </div>
 
