@@ -50,21 +50,21 @@
                         </select>
                      </div>
 
-                     <div class="col-md-3">
+                     <div class="col-md-6">
                         <label class="control-label">Weight</label>
                         <input type="text" name="total_weight" class="form-control" value="<?php if (!empty($total_weight)) {
                            echo $total_weight;
                         } ?>">
                      </div>
 
-                     <div class="col-md-3">
+                     <div class="col-md-6">
                         <label class="control-label">Price</label>
                         <input type="text" name="price" class="form-control" value="<?php if (!empty($price)) {
                            echo $price;
                         } ?>">
                      </div>
 
-                     <div class="col-md-3">
+                     <!-- <div class="col-md-3">
                         <label class="control-label">Unique Number</label>
                         <input type="text" name="unique_number" class="form-control" value="<?php if (!empty($unique_number)) {
                            echo $unique_number;
@@ -76,7 +76,7 @@
                         <input type="text" name="barcode" class="form-control" value="<?php if (!empty($barcode)) {
                            echo $barcode;
                         } ?>">
-                     </div>
+                     </div> -->
 
 
                      <div class="col-md-12">

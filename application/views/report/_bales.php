@@ -14,7 +14,7 @@
                   </h5>
 
                   <hr>
-                  <form class="row g-3" action="<?= base_url(); ?>Report/filter_inventory_report" method="POST">
+                  <form class="row g-3" action="<?= base_url(); ?>Report/refresh_bales" method="POST">
 
                      <div class="col-md-12">
                         <label for="input1" class="form-label">Client</label>

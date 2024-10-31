@@ -21,10 +21,18 @@ class Report extends CI_Controller
 	function refresh_bales()
 	{
 		$client_id = $this->input->post("client_id");
+	
+		// If client_id is "ALL", set it to null to disregard the filter
+		if ($client_id == "ALL") {
+			$client_id = null;
+		}
+	
 		$data['bales'] = $this->M_report->get_bales($client_id);
-		$data['page_title'] = "Bales Report |";
+		$data['page_title'] = "Bales | " . ($client_id ? $this->M_client->get_trading_name($client_id) : "All Clients");
+		
 		$this->load->view('report/_refresh_bales', $data);
 	}
+	
 
 
 }

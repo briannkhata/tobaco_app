@@ -27,10 +27,10 @@ class Bale extends CI_Controller
     function get_form_data()
     {
         $data["client_id"] = $this->input->post("client_id");
-        $data["barcode"] = $this->input->post("barcode");
+        //$data["barcode"] = $this->input->post("barcode");
         $data["category_id"] = $this->input->post("category_id");
         $data["total_weight"] = $this->input->post("total_weight");
-        $data["unique_number"] = $this->input->post("unique_number");
+       // $data["unique_number"] = $this->input->post("unique_number");
         $data["description"] = $this->input->post("description");
         $data["price"] = $this->input->post("price");
         return $data;
@@ -41,10 +41,10 @@ class Bale extends CI_Controller
         $query = $this->M_bale->get_bale_by_id($update_id);
         foreach ($query as $row) {
             $data["client_id"] = $row["client_id"];
-            $data["barcode"] = $row["barcode"];
+            //$data["barcode"] = $row["barcode"];
             $data["category_id"] = $row["category_id"];
             $data["total_weight"] = $row["total_weight"];
-            $data["unique_number"] = $row["unique_number"];
+           // $data["unique_number"] = $row["unique_number"];
             $data["description"] = $row["description"];
             $data["price"] = $row["price"];
         }
@@ -67,6 +67,11 @@ class Bale extends CI_Controller
         $this->load->view("bale/_form", $data);
     }
 
+    function generate_barcode()
+    {
+        return strtoupper(uniqid());
+    }
+
     function save()
     {
         $data = $this->get_form_data();
@@ -76,6 +81,7 @@ class Bale extends CI_Controller
             $this->db->update("tbl_bales", $data);
 
         } else {
+            $data["barcode"] = $this->generate_barcode();
             $this->db->insert("tbl_bales", $data);
         }
 

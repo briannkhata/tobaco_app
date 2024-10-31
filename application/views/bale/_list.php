@@ -43,7 +43,6 @@
                            <tr>
                               <th>Client</th>
                               <th>Total Weight</th>
-                              <th>Unique Number</th>
                               <th>Price</th>
                               <th>Barcode</th>
                               <th>Category</th>
@@ -63,9 +62,7 @@
                                     <?= $row['total_weight'] ?>
                                  </td>
 
-                                 <td>
-                                    <?= $row['unique_number'] ?>
-                                 </td>
+                            
                                  <td>
                                     <?= $row['price'] ?>
                                  </td>

@@ -47,11 +47,7 @@
          <hr>
       </div>
 
-      <div class="col-md-12">
-         <label for="unique_number" class="form-label">Unique Number</label><br>
-         <?= $row['unique_number']; ?>
-         <hr>
-      </div>
+     
 
       <div class="col-md-12">
          <label for="description" class="form-label">Description</label><br>
