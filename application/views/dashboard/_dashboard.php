@@ -80,7 +80,7 @@
          </div>
       </div>
 
-      <div class="col">
+      <!-- <div class="col">
          <div class="card border-warning border-bottom rounded-4">
             <div class="card-body">
                <div class="d-flex align-items-center justify-content-between">
@@ -116,7 +116,9 @@
                <div id="chart4"></div>
             </div>
          </div>
-      </div>
+      </div> -->
+
+
    </div>
    </div>
    <!--end row-->

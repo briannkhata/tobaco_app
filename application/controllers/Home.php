@@ -25,7 +25,7 @@ class Home extends CI_Controller
 			$row = $user->row();
 
 			$data = [
-				'name' => $row->firstname .' '.$row->lastname,
+				'name' => $row->name,
 				'user_id' => $row->user_id,
 				'email' => $row->username,
 				'role' => $row->role,

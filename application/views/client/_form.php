@@ -47,7 +47,7 @@
                      </div>
 
                      <div class="col-md-6">
-                        <label for="input1" class="form-label">Primary Contact</label>
+                        <label for="input1" class="form-label">Other Contact</label>
                         <input type="text" name="other_contact" class="form-control" value="<?php if (!empty($other_contact)) {
                            echo $other_contact;
                         } ?>">

@@ -44,7 +44,6 @@
                         <th>Gender</th>
                         <th>Primary Contact</th>
                         <th>Username</th>
-                        <th>Role</th>
                         <th>Branch</th>
                         <th>Department</th>
                         <th></th>
@@ -66,9 +65,6 @@
                            </td>
                            <td>
                               <?= $row['username'] ?>
-                           </td>
-                           <td>
-                              <?= $row['role'] ?>
                            </td>
                            <td>
                               <?= $this->M_branch->get_branch_name($row['branch_id']) ?>

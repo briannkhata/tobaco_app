@@ -20,9 +20,8 @@ class Category extends CI_Controller
 
 	function get_cat_form_data()
 	{
-		$data['category'] = $this->input->post('category');
-		$data['un_code'] = $this->input->post('un_code');
-		$data['desc'] = $this->input->post('desc');
+		$data['category_name'] = $this->input->post('category_name');
+		$data['description'] = $this->input->post('description');
 		return $data;
 	}
 
@@ -30,9 +29,8 @@ class Category extends CI_Controller
 	{
 		$query = $this->M_category->get_category_by_id($update_id);
 		foreach ($query as $row) {
-			$data['category'] = $row['category'];
-			$data['un_code'] = $row['un_code'];
-			$data['desc'] = $row['desc'];
+			$data['category_name'] = $row['category_name'];
+			$data['description'] = $row['description'];
 		}
 		return $data;
 	}
@@ -60,23 +58,24 @@ class Category extends CI_Controller
 
 		if (isset($update_id)) {
 			$this->db->where('category_id', $update_id);
-			$this->db->update('tbl_category', $data);
+			$this->db->update('tbl_categories', $data);
 		} else {
-			$this->db->insert('tbl_category', $data);
+			$this->db->insert('tbl_categories', $data);
 		}
+		
+		$this->session->set_flashdata('message', 'Category saved successfully!');
 		if ($update_id != ''):
 			redirect('Category');
 		else:
 			redirect('Category/read');
 		endif;
-		$this->session->set_flashdata('message', 'Category saved successfully!');
 	}
 
 	function delete($param = "")
 	{
 		$data['deleted'] = 1;
 		$this->db->where('category_id', $param);
-		$this->db->update('tbl_category', $data);
+		$this->db->update('tbl_categories', $data);
 		$this->session->set_flashdata('message', 'Category Removed successfully!');
 		redirect('Category');
 	}

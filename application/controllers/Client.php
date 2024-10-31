@@ -69,12 +69,13 @@ class Client extends CI_Controller
 		} else {
 			$this->db->insert('tbl_clients', $data);
 		}
+		
+		$this->session->set_flashdata('message', 'Client saved successfully!');
 		if ($update_id != ''):
 			redirect('Client');
 		else:
 			redirect('Client/read');
 		endif;
-		$this->session->set_flashdata('message', 'Client saved successfully!');
 	}
 
 	function delete($client_id)

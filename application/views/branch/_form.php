@@ -24,7 +24,7 @@
                      </div>
                   <?php } ?>
                   <hr>
-                  <form action="<?= base_url(); ?>Shop/save" id="form" class="row g-3" method="post">
+                  <form action="<?= base_url(); ?>Branch/save" id="form" class="row g-3" method="post">
                      <div class="col-md-12">
                         <label class="control-label">Branch Name</label>
                         <input type="text" name="branch_name" class="form-control"

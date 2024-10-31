@@ -72,12 +72,12 @@ class Bale extends CI_Controller
             $this->db->insert("tbl_bales", $data);
         }
 
-        if ($update_id != ""):
-            redirect("bale");
-        else:
-            redirect("bale/read");
-        endif;
         $this->session->set_flashdata("message", "Bale saved successfully!");
+        if ($update_id != ""):
+            redirect("Bale");
+        else:
+            redirect("Bale/read");
+        endif;
     }
 
     function delete($param = "")

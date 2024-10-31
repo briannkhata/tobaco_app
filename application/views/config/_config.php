@@ -34,9 +34,8 @@
                            <label class="control-label">Logo</label>
                            <input type="file" name="logo" id="logo" class="form-control">
                         </div>
-                       
-                        <img id="image" src="<?=$row['logo']; ?>"
-                           class="img-responsive img-thumbnail"
+
+                        <img id="image" src="<?= $row['logo']; ?>" class="img-responsive img-thumbnail"
                            style="width: 250px; height: 250px; margin-left: 3%; margin-top: 1%;" />
 
                         <div class="col-md-12">
@@ -72,27 +71,6 @@
                         </div>
 
                         <div class="col-md-12">
-                           <label class="control-label">VAT</label>
-                           <input type="text" name="vat" class="form-control" value="<?= $row['vat']; ?>">
-                        </div>
-
-                        <div class="col-md-12">
-                           <label class="control-label">VAT Status</label>
-                           <select class="form-control" name="vat_status">
-                              <option selected disabled>option</option>
-                              <option <?php if ($row['vat_status'] == "inclusive")
-                                 echo 'selected'; ?> value="inclusive">
-                                 Inclusive</option>
-                              <option <?php if ($row['vat_status'] == "exclusive")
-                                 echo 'selected'; ?> value="exclusive">
-                                 Exclusive</option>
-                              <option <?php if ($row['vat_status'] == "exclude")
-                                 echo 'selected'; ?> value="exclude">Exclude
-                              </option>
-                           </select>
-                        </div>
-
-                        <div class="col-md-12">
                            <div class="d-md-flex d-grid align-items-center gap-3">
                               <button type="submit" class="btn btn-primary px-4">Save</button>
                            </div>
@@ -108,26 +86,15 @@
 </main>
 <!--end main wrapper-->
 <script type="text/javascript">
-   // function previewImage(input) {
-   //    var file = input.files[0];
 
-   //    if (file) {
-   //       var reader = new FileReader();
-   //       reader.onload = function (e) {
-   //          $('#photoPreview').html('<img src="' + e.target.result + '" class="img-fluid" alt="Preview" style="width:150px; height:100px;">');
-   //       }
-
-   //       reader.readAsDataURL(file);
-   //    }
-   // }
 
    document.getElementById("logo").onchange = function () {
-        var reader = new FileReader();
-        reader.onload = function (e) {
-            document.getElementById("image").src = e.target.result;
-        };
-        reader.readAsDataURL(this.files[0]);
-    };
+      var reader = new FileReader();
+      reader.onload = function (e) {
+         document.getElementById("image").src = e.target.result;
+      };
+      reader.readAsDataURL(this.files[0]);
+   };
 
 </script>
 <?php $this->load->view('includes/footer.php'); ?>

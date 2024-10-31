@@ -60,18 +60,16 @@ class Branch extends CI_Controller
         if (isset($update_id)) {
             $this->db->where("branch_id", $update_id);
             $this->db->update("tbl_branches", $data);
-            $this->sync_quantities($update_id);
         } else {
             $this->db->insert("tbl_branches", $data);
-            $branch_id = $this->db->insert_id();
-            $this->sync_quantities($branch_id);
         }
+        
+        $this->session->set_flashdata("message", "Branch saved successfully!");
         if ($update_id != ""):
             redirect("Branch");
         else:
             redirect("Branch/read");
         endif;
-        $this->session->set_flashdata("message", "Branch saved successfully!");
     }
 
 
