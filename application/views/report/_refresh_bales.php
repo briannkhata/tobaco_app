@@ -38,10 +38,10 @@
                         foreach ($bales as $row): ?>
                            <tr>
                               <td>
-                                 <?= $row['total_weight'] ?>
+                              <small><i><?=$this->M_report->get_weight_unit();?></i></small> <?= number_format($row['total_weight'],3) ?>
                               </td>
                               <td>
-                                 <?= $row['price'] ?>
+                                <small><?=$this->M_report->get_currency();?></small> <?= number_format($row['price'],2) ?>
                               </td>
                               <td>
                                  <?= $row['barcode'] ?>

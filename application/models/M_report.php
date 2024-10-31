@@ -20,6 +20,28 @@ class M_report extends CI_Model
         
         return $query->result_array();
     }
+
+    function get_weight_unit()
+    {
+        $this->db->select('weight_units');
+        $result = $this->db->get('tbl_settings')->row();
+        if ($result == NULL) {
+            return "";
+        } else {
+            return $result->weight_units;
+        }
+    }
+
+    function get_currency()
+    {
+        $this->db->select('currency');
+        $result = $this->db->get('tbl_settings')->row();
+        if ($result == NULL) {
+            return "";
+        } else {
+            return $result->currency;
+        }
+    }
     
 
 }

@@ -35,8 +35,7 @@
                <thead>
                   <tr>
                      <th>Trading Name</th>
-                     <th>Primary Contact</th>
-                     <th>Other Contact</th>
+                     <th>Contacts</th>
                      <th>Branch</th>
                      <th>Address</th>
                      <th></th>
@@ -50,8 +49,7 @@
                         </td>
                         <td>
                            <?= $row['primary_contact']; ?>
-                        </td>
-                        <td>
+                           <br>
                            <?= $row['other_contact']; ?>
                         </td>
 
@@ -75,12 +73,12 @@
                                           Edit
                                        </a>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                        <a href="<?= base_url(); ?>Client/view/<?= $row['client_id']; ?>"
                                           class="dropdown-item">
-                                          View | Bills
+                                          View
                                        </a>
-                                    </li>
+                                    </li> -->
                                     <li>
                                        <a href="<?= base_url(); ?>Client/delete/<?= $row['client_id']; ?>"
                                           class="dropdown-item">

@@ -59,12 +59,12 @@
                                     <?= $this->M_client->get_trading_name($row['client_id']); ?>
                                  </td>
                                  <td>
-                                    <?= $row['total_weight'] ?>
+                                 <small><?=$this->M_report->get_weight_unit();?></small> <?= number_format($row['total_weight'],3) ?>
                                  </td>
 
                             
                                  <td>
-                                    <?= $row['price'] ?>
+                                 <small><?=$this->M_report->get_currency();?></small> <?= number_format($row['price'],2) ?>
                                  </td>
                                  <td>
                                     <?= $row['barcode'] ?>

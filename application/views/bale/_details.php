@@ -37,13 +37,13 @@
 
       <div class="col-md-12">
          <label for="total_weight" class="form-label">Total Weight</label><br>
-         <?= $row['total_weight']; ?>
+         <small><?=$this->M_report->get_weight_unit();?></small> <?= $row['total_weight']; ?>
          <hr>
       </div>
 
       <div class="col-md-12">
          <label for="unique_number" class="form-label">Price</label><br>
-         <?= number_format($row['price'],2); ?>
+         <small><?=$this->M_report->get_currency();?></small> <?= number_format($row['price'],2); ?>
          <hr>
       </div>
 
