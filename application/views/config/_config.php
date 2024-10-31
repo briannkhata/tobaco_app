@@ -65,6 +65,16 @@
                            <input type="text" name="alt_email" class="form-control" value="<?= $row['alt_email']; ?>">
                         </div>
 
+                        <div class="col-md-6">
+                           <label class="control-label">Currency</label>
+                           <input type="text" name="currency" class="form-control" value="<?= $row['currency']; ?>">
+                        </div>
+
+                        <div class="col-md-6">
+                           <label class="control-label">Weight Unit</label>
+                           <input type="text" name="weight_units" class="form-control" value="<?= $row['weight_units']; ?>">
+                        </div>
+
                         <div class="col-md-12">
                            <label class="control-label">Address</label>
                            <textarea name="address" class="form-control"><?= $row['address']; ?></textarea>

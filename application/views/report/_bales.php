@@ -14,17 +14,20 @@
                   </h5>
 
                   <hr>
-                  <form class="row g-3" action="<?= base_url(); ?>Report/filter_sales" method="POST">
+                  <form class="row g-3" action="<?= base_url(); ?>Report/filter_inventory_report" method="POST">
 
-                     <div class="col-md-6">
-                        <label for="input1" class="form-label">Date From</label>
-                        <input type="date" name="start_date" class="form-control" required />
+                     <div class="col-md-12">
+                        <label for="input1" class="form-label">Client</label>
+                        <select class="form-control" name="client_id">
+                        <option value="ALL" selected>ALL</option>
+                           <?php foreach ($this->M_client->get_clients() as $row) { ?>
+                              <option value="<?=$row['client_id'];?>"><?=$row['trading_name']; ?></option>
+                           <?php } ?>
+
+                        </select>
                      </div>
 
-                     <div class="col-md-6">
-                        <label for="input1" class="form-label">Date To</label>
-                        <input type="date" name="end_date" class="form-control" required />
-                     </div>
+                    
 
                      <div class="col-md-12">
                         <div class="d-md-flex d-grid align-items-center gap-3">

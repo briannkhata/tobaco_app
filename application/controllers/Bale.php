@@ -72,14 +72,10 @@ class Bale extends CI_Controller
         $data = $this->get_form_data();
         $update_id = $this->input->post("update_id", true);
         if (isset($update_id)) {
-            // $data["updated_by"] = $this->session->userdata("user_id");
-            // $data["date_updated"] = date("Y-m-d");
             $this->db->where("bale_id", $update_id);
             $this->db->update("tbl_bales", $data);
 
         } else {
-            // $data["added_by"] = $this->session->userdata("user_id");
-            // $data["date_added"] = date("Y-m-d");
             $this->db->insert("tbl_bales", $data);
         }
 

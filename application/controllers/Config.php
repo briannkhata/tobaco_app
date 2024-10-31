@@ -26,6 +26,8 @@ class Config extends CI_Controller
 		$data['phone'] = $this->input->post('phone');
 		$data['alt_phone'] = $this->input->post('alt_phone');
 		$data['address'] = $this->input->post('address');
+		$data['currency'] = $this->input->post('currency');
+		$data['weight_units'] = $this->input->post('weight_units');
 
 		if (!empty($_FILES['logo']['name'])) {
 			$uploadDir = './assets/uploads/';
