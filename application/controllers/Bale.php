@@ -13,7 +13,7 @@ class Bale extends CI_Controller
 
     function index()
     {
-        $data["page_title"] = "bales";
+        $data["page_title"] = "Bales |";
         $this->load->view("bale/_list", $data);
     }
 
@@ -27,10 +27,8 @@ class Bale extends CI_Controller
     function get_form_data()
     {
         $data["client_id"] = $this->input->post("client_id");
-        //$data["barcode"] = $this->input->post("barcode");
         $data["category_id"] = $this->input->post("category_id");
         $data["total_weight"] = $this->input->post("total_weight");
-        // $data["unique_number"] = $this->input->post("unique_number");
         $data["description"] = $this->input->post("description");
         $data["price"] = $this->input->post("price");
         return $data;
@@ -41,10 +39,8 @@ class Bale extends CI_Controller
         $query = $this->M_bale->get_bale_by_id($update_id);
         foreach ($query as $row) {
             $data["client_id"] = $row["client_id"];
-            //$data["barcode"] = $row["barcode"];
             $data["category_id"] = $row["category_id"];
             $data["total_weight"] = $row["total_weight"];
-            // $data["unique_number"] = $row["unique_number"];
             $data["description"] = $row["description"];
             $data["price"] = $row["price"];
         }
@@ -68,51 +64,46 @@ class Bale extends CI_Controller
     }
 
 
+
     function generate_qrcode($data)
     {
-        // Load QR Code Library
         $this->load->library('ciqrcode');
 
-        // Convert array to string if necessary
-        if (is_array($data)) {
-            $data = json_encode($data); // Convert array to JSON string
+        $data = is_array($data) ? json_encode($data) : $data;
+
+        $filename = bin2hex($data);
+        $filename = substr($filename, 0, 50) . '.png';
+
+        // Define the directory for saving QR codes
+        $dir = 'assets/images/qrcode/';
+        if (!file_exists($dir) && !mkdir($dir, 0775, true)) {
+            throw new Exception('Failed to create directory: ' . $dir);
         }
 
-        // Prepare Data
-        $hex_data = bin2hex($data);
-        $save_name = $hex_data . '.png';
-
-        // Initialize QR Code File Directory
-        $dir = FCPATH . 'assets/media/qrcode/'; // Use FCPATH instead of base_url
-        if (!file_exists($dir)) {
-            mkdir($dir, 0775, true); // Create directory if it doesn't exist
-        }
-
-        // QR Code Configuration
-        $config = array(
-            'cacheable' => true,
+        // QR Code configuration
+        $config = [
+            'cacheable' => false,
             'imagedir' => $dir,
             'quality' => true,
             'size' => '1024',
-            'black' => array(0, 0, 0), // Set to black
-            'white' => array(255, 255, 255) // Set to white
-        );
+            'black' => [0, 0, 0],
+            'white' => [255, 255, 255]
+        ];
         $this->ciqrcode->initialize($config);
 
-        // QR Code Data Parameters
-        $params = array(
+        $params = [
             'data' => $data,
-            'level' => 'L', // Error correction level
-            'size' => 10,   // Size of the QR Code
-            'savename' => FCPATH . $config['imagedir'] . $save_name // Path to save the QR code
-        );
+            'level' => 'L',
+            'size' => 10,
+            'savename' => $dir . $filename
+        ];
 
-        // Generate QR Code
-        $this->ciqrcode->generate($params);
-
-        // Return the file path as a string
-        return $save_name;
+        if (!$this->ciqrcode->generate($params)) {
+            throw new Exception('Failed to generate QR code for data: ' . $data);
+        }
+        return $dir . $filename;
     }
+
 
     function save()
     {
@@ -125,7 +116,6 @@ class Bale extends CI_Controller
 
         } else {
             $data['qr_code'] = $this->generate_qrcode($data);
-            $data['file_path'] = $this->generate_qrcode($data);
             $this->db->insert("tbl_bales", $data);
         }
 

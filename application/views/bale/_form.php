@@ -29,7 +29,7 @@
                      <div class="col-md-6">
                         <label for="input1" class="form-label">Client</label>
                         <select class="form-control" name="client_id">
-                           <option selected disabled>option</option>
+                           <option selected disabled>Option</option>
                            <?php foreach ($this->M_client->get_clients() as $row) { ?>
                               <option <?php if ($client_id == $row['client_id'])
                                  echo 'selected'; ?>
@@ -41,7 +41,7 @@
                      <div class="col-md-6">
                         <label for="input1" class="form-label">Category</label>
                         <select class="form-control" name="category_id">
-                           <option selected disabled>option</option>
+                           <option selected disabled>Option</option>
                            <?php foreach ($this->M_category->get_categories() as $row) { ?>
                               <option <?php if ($category_id == $row['category_id'])
                                  echo 'selected'; ?>
