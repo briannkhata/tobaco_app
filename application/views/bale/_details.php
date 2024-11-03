@@ -18,16 +18,20 @@
    <?php foreach($this->M_bale->get_bale_by_id($bale_id) as $row): ?>
 
       <div class="col-md-12">
+         <label for="barcode" class="form-label">QR Code</label><br>
+         <?php //= $row['barcode']; ?>
+
+         <img src="<?= base_url($row['file_path']) ?>" class="content-img" alt="<?= $row['qr_code'] ?>">
+
+         <hr>
+      </div>
+      <div class="col-md-12">
          <label for="barcode" class="form-label">Client</label><br>
          <?= $this->M_client->get_trading_name($row['client_id']); ?>
          <hr>
       </div>
 
-      <div class="col-md-12">
-         <label for="barcode" class="form-label">Barcode</label><br>
-         <?= $row['barcode']; ?>
-         <hr>
-      </div>
+    
 
       <div class="col-md-12">
          <label for="category_id" class="form-label">Category</label><br>
