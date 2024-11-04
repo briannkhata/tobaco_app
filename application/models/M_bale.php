@@ -23,6 +23,33 @@ class M_bale extends CI_Model
         $query = $this->db->get('tbl_bales');
         return $query->result_array();
     }
+    // function get_bale_details($bale_id)
+    // {
+    //     $this->db->where('bale_id', $bale_id);
+    //     $query = $this->db->get('vwbale_details');
+    //     return $query->result_array();
+    // }
+
+
+    function get_bale_details($bale_id)
+    {
+        $this->db->where('bale_id', $bale_id);
+        $query = $this->db->get('vwbale_details');
+        $result = $query->result_array();
+
+        $string_representation = "";
+        foreach ($result as $row) {
+            foreach ($row as $key => $value) {
+                $string_representation .= "$key: $value\n";
+            }
+            $string_representation .= "\n";
+        }
+
+        return $string_representation;
+    }
+
+
+
 
 
     function get_category_id($bale_id)

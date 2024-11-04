@@ -30,21 +30,19 @@
 
 <body>
 
+
     <div class="section-authentication-cover">
         <div class="">
             <div class="row g-0">
                 <div
                     class="col-12 col-xl-7 col-xxl-8 auth-cover-left align-items-center justify-content-center d-none d-xl-flex border-end">
-                    <div class="card rounded-0 mb-0 border-0 shadow-none bg-transparent">
-                        <div class="card-body"><img src="<?= base_url(); ?>assets/images/auth/login1.png"
-                                class="img-fluid auth-img-cover-login" width="650" alt="">
-                        </div>
-                    </div>
+                            <img src="<?= base_url(); ?>assets/images/auth/back-login.png"
+                                 alt="">
                 </div>
                 <div class="col-12 col-xl-5 col-xxl-4 auth-cover-right align-items-center justify-content-center">
                     <div class="card rounded-0 m-3 mb-0 border-0 shadow-none">
                         <div class="card-body p-sm-5">
-                            <img src="<?= base_url(); ?>assets/images/logo1.png" class="mb-4" width="145" alt="">
+                            <img src="<?= base_url(); ?>assets/images/auth/logo6.png" class="mb-4" width="145" alt="">
 
                             <?php if ($this->session->flashdata('message2')) {
                                 ?>

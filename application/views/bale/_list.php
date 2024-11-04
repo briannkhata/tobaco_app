@@ -44,7 +44,6 @@
                               <th>Client</th>
                               <th>Total Weight</th>
                               <th>Price</th>
-                              <th>Barcode</th>
                               <th>Category</th>
                               <th>Decription</th>
                               <th></th>
@@ -66,10 +65,7 @@
                                  <td>
                                  <small><?=$this->M_report->get_currency();?></small> <?= number_format($row['price'],2) ?>
                                  </td>
-                                 <td>
-                                    <?= $row['barcode'] ?>
-                                 </td>
-
+                                
                                  <td>
                                     <?= $this->M_category->get_category_name($row['category_id']); ?>
                                  </td>

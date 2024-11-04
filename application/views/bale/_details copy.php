@@ -15,7 +15,7 @@
 
                   <hr>
                   <form class="row g-3" method="post">
-                     <?php foreach ($this->M_bale->get_bale_by_id($bale_id) as $row): ?>
+                     <?php foreach ($this->M_bale->get_bale_details($bale_id) as $row): ?>
 
                         <div class="col-md-12">
 
@@ -26,9 +26,9 @@
                         </div>
                         <div class="col-md-12">
                            <label for="barcode" class="form-label">Client</label><br>
-                           <?= $this->M_client->get_trading_name($row['client_id']); ?> <br>
-                           <small>Contact : <?=$this->M_client->get_primary_contact($row['client_id']);?></small><br>
-                           <small>Address : <?=$this->M_client->get_address($row['client_id']);?></small>
+                           <?= $row['trading_name']; ?> <br>
+                           <small>Contact : <?=$row['primary_contact'];?></small><br>
+                           <small>Address : <?=$row['address'];?></small>
                            <hr>
                         </div>
 
@@ -36,7 +36,7 @@
 
                         <div class="col-md-12">
                            <label for="category_id" class="form-label">Category</label><br>
-                           <?= $this->M_category->get_category_name($row['category_id']); ?> | <?=$this->M_category->get_category_description($row['category_id']);?>
+                           <?= $row['category_name']; ?> | <?=$row['category_description'];?>
                            <hr>
                         </div>
 
@@ -56,7 +56,7 @@
 
                         <div class="col-md-12">
                            <label for="description" class="form-label">Description</label><br>
-                           <?= $row['description']; ?>
+                           <?= $row['bale_description']; ?>
                            <hr>
                         </div>
                      <?php endforeach; ?>

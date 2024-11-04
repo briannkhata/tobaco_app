@@ -111,12 +111,22 @@ class Bale extends CI_Controller
 
         $update_id = $this->input->post("update_id", true);
         if (isset($update_id)) {
+            //$data_2 = is_array($this->M_bale->$this->M_bale->get_bale_details($update_id)) ? json_encode($this->M_bale->$this->M_bale->get_bale_details($update_id)) : $this->M_bale->$this->M_bale->get_bale_details($update_id);
+            $data_2 = $this->M_bale->get_bale_details($update_id);
+            $data3['qr_code'] = $this->generate_qrcode($data_2);
             $this->db->where("bale_id", $update_id);
             $this->db->update("tbl_bales", $data);
 
         } else {
-            $data['qr_code'] = $this->generate_qrcode($data);
             $this->db->insert("tbl_bales", $data);
+            $bale_id = $this->db->insert_id();
+            $data_2 = $this->M_bale->get_bale_details($bale_id);
+
+            //$data_2 = is_array($this->M_bale->$this->M_bale->get_bale_details($bale_id)) ? json_encode($this->M_bale->$this->M_bale->get_bale_details($bale_id)) : $this->M_bale->$this->M_bale->get_bale_details($bale_id);
+            $data3['qr_code'] = $this->generate_qrcode($data_2);
+
+            $this->db->where("bale_id", $bale_id);
+            $this->db->update("tbl_bales", $data3);
         }
 
         $this->session->set_flashdata("message", "Bale saved successfully!");

@@ -36,5 +36,30 @@ class M_client extends CI_Model
         }
     }
 
+    function get_primary_contact($client_id)
+    {
+        $this->db->select('primary_contact');
+        $this->db->where('client_id', $client_id);
+        $result = $this->db->get('tbl_clients')->row();
+        if ($result == NULL) {
+            return "";
+        } else {
+            return $result->primary_contact;
+        }
+    }
+
+    function get_address($client_id)
+    {
+        $this->db->select('address');
+        $this->db->where('client_id', $client_id);
+        $result = $this->db->get('tbl_clients')->row();
+        if ($result == NULL) {
+            return "";
+        } else {
+            return $result->address;
+        }
+    }
+
+
    
 }
