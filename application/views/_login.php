@@ -42,7 +42,7 @@
                 <div class="col-12 col-xl-5 col-xxl-4 auth-cover-right align-items-center justify-content-center">
                     <div class="card rounded-0 m-3 mb-0 border-0 shadow-none">
                         <div class="card-body p-sm-5">
-                            <img src="<?= base_url(); ?>assets/images/auth/logo6.png" class="mb-4" width="145" alt="">
+                            <!-- <img src="<?= base_url(); ?>assets/images/auth/logo66.png" class="" style="margin-left:-8%; margin-bottom: -5;" width="145" alt=""> -->
 
                             <?php if ($this->session->flashdata('message2')) {
                                 ?>

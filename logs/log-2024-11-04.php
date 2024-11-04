@@ -2450,3 +2450,1383 @@ INFO - 2024-11-04 13:18:33 --> File loaded: C:\xampp\htdocs\tobaco_app\applicati
 INFO - 2024-11-04 13:18:33 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\bale/_details.php
 INFO - 2024-11-04 13:18:33 --> Final output sent to browser
 DEBUG - 2024-11-04 13:18:33 --> Total execution time: 0.5584
+INFO - 2024-11-04 13:23:52 --> Config Class Initialized
+INFO - 2024-11-04 13:23:52 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:23:52 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:23:52 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:23:52 --> URI Class Initialized
+INFO - 2024-11-04 13:23:52 --> Router Class Initialized
+INFO - 2024-11-04 13:23:52 --> Output Class Initialized
+INFO - 2024-11-04 13:23:52 --> Security Class Initialized
+DEBUG - 2024-11-04 13:23:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:23:52 --> Input Class Initialized
+INFO - 2024-11-04 13:23:52 --> Language Class Initialized
+INFO - 2024-11-04 13:23:52 --> Loader Class Initialized
+INFO - 2024-11-04 13:23:52 --> Helper loaded: url_helper
+INFO - 2024-11-04 13:23:52 --> Helper loaded: file_helper
+INFO - 2024-11-04 13:23:52 --> Helper loaded: html_helper
+INFO - 2024-11-04 13:23:52 --> Helper loaded: form_helper
+INFO - 2024-11-04 13:23:52 --> Database Driver Class Initialized
+INFO - 2024-11-04 13:23:52 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 13:23:52 --> Email Class Initialized
+INFO - 2024-11-04 13:23:52 --> Form Validation Class Initialized
+INFO - 2024-11-04 13:23:52 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 13:23:52 --> Pagination Class Initialized
+INFO - 2024-11-04 13:23:52 --> Model "M_user" initialized
+INFO - 2024-11-04 13:23:52 --> Model "M_bale" initialized
+INFO - 2024-11-04 13:23:52 --> Model "M_category" initialized
+INFO - 2024-11-04 13:23:52 --> Model "M_branch" initialized
+INFO - 2024-11-04 13:23:52 --> Model "M_report" initialized
+INFO - 2024-11-04 13:23:52 --> Model "M_department" initialized
+INFO - 2024-11-04 13:23:52 --> Model "M_client" initialized
+INFO - 2024-11-04 13:23:52 --> Controller Class Initialized
+INFO - 2024-11-04 13:23:52 --> Config Class Initialized
+INFO - 2024-11-04 13:23:52 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:23:52 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:23:52 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:23:52 --> URI Class Initialized
+DEBUG - 2024-11-04 13:23:52 --> No URI present. Default controller set.
+INFO - 2024-11-04 13:23:52 --> Router Class Initialized
+INFO - 2024-11-04 13:23:52 --> Output Class Initialized
+INFO - 2024-11-04 13:23:52 --> Security Class Initialized
+DEBUG - 2024-11-04 13:23:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:23:52 --> Input Class Initialized
+INFO - 2024-11-04 13:23:52 --> Language Class Initialized
+INFO - 2024-11-04 13:23:52 --> Loader Class Initialized
+INFO - 2024-11-04 13:23:52 --> Helper loaded: url_helper
+INFO - 2024-11-04 13:23:52 --> Helper loaded: file_helper
+INFO - 2024-11-04 13:23:52 --> Helper loaded: html_helper
+INFO - 2024-11-04 13:23:52 --> Helper loaded: form_helper
+INFO - 2024-11-04 13:23:52 --> Database Driver Class Initialized
+INFO - 2024-11-04 13:23:52 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 13:23:52 --> Email Class Initialized
+INFO - 2024-11-04 13:23:52 --> Form Validation Class Initialized
+INFO - 2024-11-04 13:23:53 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 13:23:53 --> Pagination Class Initialized
+INFO - 2024-11-04 13:23:53 --> Model "M_user" initialized
+INFO - 2024-11-04 13:23:53 --> Model "M_bale" initialized
+INFO - 2024-11-04 13:23:53 --> Model "M_category" initialized
+INFO - 2024-11-04 13:23:53 --> Model "M_branch" initialized
+INFO - 2024-11-04 13:23:53 --> Model "M_report" initialized
+INFO - 2024-11-04 13:23:53 --> Model "M_department" initialized
+INFO - 2024-11-04 13:23:53 --> Model "M_client" initialized
+INFO - 2024-11-04 13:23:53 --> Controller Class Initialized
+INFO - 2024-11-04 13:23:53 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\_login.php
+INFO - 2024-11-04 13:23:53 --> Final output sent to browser
+DEBUG - 2024-11-04 13:23:53 --> Total execution time: 0.4689
+INFO - 2024-11-04 13:25:23 --> Config Class Initialized
+INFO - 2024-11-04 13:25:23 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:25:23 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:25:23 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:25:23 --> URI Class Initialized
+DEBUG - 2024-11-04 13:25:23 --> No URI present. Default controller set.
+INFO - 2024-11-04 13:25:23 --> Router Class Initialized
+INFO - 2024-11-04 13:25:23 --> Output Class Initialized
+INFO - 2024-11-04 13:25:23 --> Security Class Initialized
+DEBUG - 2024-11-04 13:25:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:25:23 --> Input Class Initialized
+INFO - 2024-11-04 13:25:23 --> Language Class Initialized
+INFO - 2024-11-04 13:25:23 --> Loader Class Initialized
+INFO - 2024-11-04 13:25:23 --> Helper loaded: url_helper
+INFO - 2024-11-04 13:25:23 --> Helper loaded: file_helper
+INFO - 2024-11-04 13:25:23 --> Helper loaded: html_helper
+INFO - 2024-11-04 13:25:23 --> Helper loaded: form_helper
+INFO - 2024-11-04 13:25:23 --> Database Driver Class Initialized
+INFO - 2024-11-04 13:25:23 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 13:25:23 --> Email Class Initialized
+INFO - 2024-11-04 13:25:23 --> Form Validation Class Initialized
+INFO - 2024-11-04 13:25:23 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 13:25:24 --> Pagination Class Initialized
+INFO - 2024-11-04 13:25:24 --> Model "M_user" initialized
+INFO - 2024-11-04 13:25:24 --> Model "M_bale" initialized
+INFO - 2024-11-04 13:25:24 --> Model "M_category" initialized
+INFO - 2024-11-04 13:25:24 --> Model "M_branch" initialized
+INFO - 2024-11-04 13:25:24 --> Model "M_report" initialized
+INFO - 2024-11-04 13:25:24 --> Model "M_department" initialized
+INFO - 2024-11-04 13:25:24 --> Model "M_client" initialized
+INFO - 2024-11-04 13:25:24 --> Controller Class Initialized
+INFO - 2024-11-04 13:25:24 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\_login.php
+INFO - 2024-11-04 13:25:24 --> Final output sent to browser
+DEBUG - 2024-11-04 13:25:24 --> Total execution time: 0.5222
+INFO - 2024-11-04 13:34:00 --> Config Class Initialized
+INFO - 2024-11-04 13:34:00 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:34:00 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:34:00 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:34:00 --> URI Class Initialized
+DEBUG - 2024-11-04 13:34:00 --> No URI present. Default controller set.
+INFO - 2024-11-04 13:34:00 --> Router Class Initialized
+INFO - 2024-11-04 13:34:00 --> Output Class Initialized
+INFO - 2024-11-04 13:34:00 --> Security Class Initialized
+DEBUG - 2024-11-04 13:34:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:34:00 --> Input Class Initialized
+INFO - 2024-11-04 13:34:00 --> Language Class Initialized
+INFO - 2024-11-04 13:34:00 --> Loader Class Initialized
+INFO - 2024-11-04 13:34:00 --> Helper loaded: url_helper
+INFO - 2024-11-04 13:34:00 --> Helper loaded: file_helper
+INFO - 2024-11-04 13:34:00 --> Helper loaded: html_helper
+INFO - 2024-11-04 13:34:00 --> Helper loaded: form_helper
+INFO - 2024-11-04 13:34:00 --> Database Driver Class Initialized
+INFO - 2024-11-04 13:34:00 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 13:34:00 --> Email Class Initialized
+INFO - 2024-11-04 13:34:00 --> Form Validation Class Initialized
+INFO - 2024-11-04 13:34:00 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 13:34:00 --> Pagination Class Initialized
+INFO - 2024-11-04 13:34:00 --> Model "M_user" initialized
+INFO - 2024-11-04 13:34:00 --> Model "M_bale" initialized
+INFO - 2024-11-04 13:34:00 --> Model "M_category" initialized
+INFO - 2024-11-04 13:34:00 --> Model "M_branch" initialized
+INFO - 2024-11-04 13:34:00 --> Model "M_report" initialized
+INFO - 2024-11-04 13:34:00 --> Model "M_department" initialized
+INFO - 2024-11-04 13:34:00 --> Model "M_client" initialized
+INFO - 2024-11-04 13:34:00 --> Controller Class Initialized
+INFO - 2024-11-04 13:34:01 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\_login.php
+INFO - 2024-11-04 13:34:01 --> Final output sent to browser
+DEBUG - 2024-11-04 13:34:01 --> Total execution time: 0.5556
+INFO - 2024-11-04 13:34:09 --> Config Class Initialized
+INFO - 2024-11-04 13:34:09 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:34:09 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:34:09 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:34:09 --> URI Class Initialized
+DEBUG - 2024-11-04 13:34:09 --> No URI present. Default controller set.
+INFO - 2024-11-04 13:34:09 --> Router Class Initialized
+INFO - 2024-11-04 13:34:09 --> Output Class Initialized
+INFO - 2024-11-04 13:34:09 --> Security Class Initialized
+DEBUG - 2024-11-04 13:34:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:34:09 --> Input Class Initialized
+INFO - 2024-11-04 13:34:09 --> Language Class Initialized
+INFO - 2024-11-04 13:34:09 --> Loader Class Initialized
+INFO - 2024-11-04 13:34:09 --> Helper loaded: url_helper
+INFO - 2024-11-04 13:34:09 --> Helper loaded: file_helper
+INFO - 2024-11-04 13:34:09 --> Helper loaded: html_helper
+INFO - 2024-11-04 13:34:09 --> Helper loaded: form_helper
+INFO - 2024-11-04 13:34:09 --> Database Driver Class Initialized
+INFO - 2024-11-04 13:34:09 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 13:34:09 --> Email Class Initialized
+INFO - 2024-11-04 13:34:09 --> Form Validation Class Initialized
+INFO - 2024-11-04 13:34:09 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 13:34:09 --> Pagination Class Initialized
+INFO - 2024-11-04 13:34:09 --> Model "M_user" initialized
+INFO - 2024-11-04 13:34:09 --> Model "M_bale" initialized
+INFO - 2024-11-04 13:34:09 --> Model "M_category" initialized
+INFO - 2024-11-04 13:34:09 --> Model "M_branch" initialized
+INFO - 2024-11-04 13:34:09 --> Model "M_report" initialized
+INFO - 2024-11-04 13:34:09 --> Model "M_department" initialized
+INFO - 2024-11-04 13:34:09 --> Model "M_client" initialized
+INFO - 2024-11-04 13:34:09 --> Controller Class Initialized
+INFO - 2024-11-04 13:34:09 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\_login.php
+INFO - 2024-11-04 13:34:09 --> Final output sent to browser
+DEBUG - 2024-11-04 13:34:09 --> Total execution time: 0.4813
+INFO - 2024-11-04 13:34:23 --> Config Class Initialized
+INFO - 2024-11-04 13:34:23 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:34:23 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:34:23 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:34:23 --> URI Class Initialized
+DEBUG - 2024-11-04 13:34:23 --> No URI present. Default controller set.
+INFO - 2024-11-04 13:34:23 --> Router Class Initialized
+INFO - 2024-11-04 13:34:23 --> Output Class Initialized
+INFO - 2024-11-04 13:34:23 --> Security Class Initialized
+DEBUG - 2024-11-04 13:34:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:34:23 --> Input Class Initialized
+INFO - 2024-11-04 13:34:23 --> Language Class Initialized
+INFO - 2024-11-04 13:34:24 --> Loader Class Initialized
+INFO - 2024-11-04 13:34:24 --> Helper loaded: url_helper
+INFO - 2024-11-04 13:34:24 --> Helper loaded: file_helper
+INFO - 2024-11-04 13:34:24 --> Helper loaded: html_helper
+INFO - 2024-11-04 13:34:24 --> Helper loaded: form_helper
+INFO - 2024-11-04 13:34:24 --> Database Driver Class Initialized
+INFO - 2024-11-04 13:34:24 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 13:34:24 --> Email Class Initialized
+INFO - 2024-11-04 13:34:24 --> Form Validation Class Initialized
+INFO - 2024-11-04 13:34:24 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 13:34:24 --> Pagination Class Initialized
+INFO - 2024-11-04 13:34:24 --> Model "M_user" initialized
+INFO - 2024-11-04 13:34:24 --> Model "M_bale" initialized
+INFO - 2024-11-04 13:34:24 --> Model "M_category" initialized
+INFO - 2024-11-04 13:34:24 --> Model "M_branch" initialized
+INFO - 2024-11-04 13:34:24 --> Model "M_report" initialized
+INFO - 2024-11-04 13:34:24 --> Model "M_department" initialized
+INFO - 2024-11-04 13:34:24 --> Model "M_client" initialized
+INFO - 2024-11-04 13:34:24 --> Controller Class Initialized
+INFO - 2024-11-04 13:34:24 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\_login.php
+INFO - 2024-11-04 13:34:24 --> Final output sent to browser
+DEBUG - 2024-11-04 13:34:24 --> Total execution time: 0.5439
+INFO - 2024-11-04 13:34:33 --> Config Class Initialized
+INFO - 2024-11-04 13:34:33 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:34:33 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:34:33 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:34:33 --> URI Class Initialized
+DEBUG - 2024-11-04 13:34:33 --> No URI present. Default controller set.
+INFO - 2024-11-04 13:34:33 --> Router Class Initialized
+INFO - 2024-11-04 13:34:33 --> Output Class Initialized
+INFO - 2024-11-04 13:34:33 --> Security Class Initialized
+DEBUG - 2024-11-04 13:34:33 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:34:33 --> Input Class Initialized
+INFO - 2024-11-04 13:34:33 --> Language Class Initialized
+INFO - 2024-11-04 13:34:33 --> Loader Class Initialized
+INFO - 2024-11-04 13:34:33 --> Helper loaded: url_helper
+INFO - 2024-11-04 13:34:34 --> Helper loaded: file_helper
+INFO - 2024-11-04 13:34:34 --> Helper loaded: html_helper
+INFO - 2024-11-04 13:34:34 --> Helper loaded: form_helper
+INFO - 2024-11-04 13:34:34 --> Database Driver Class Initialized
+INFO - 2024-11-04 13:34:34 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 13:34:34 --> Email Class Initialized
+INFO - 2024-11-04 13:34:34 --> Form Validation Class Initialized
+INFO - 2024-11-04 13:34:34 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 13:34:34 --> Pagination Class Initialized
+INFO - 2024-11-04 13:34:34 --> Model "M_user" initialized
+INFO - 2024-11-04 13:34:34 --> Model "M_bale" initialized
+INFO - 2024-11-04 13:34:34 --> Model "M_category" initialized
+INFO - 2024-11-04 13:34:34 --> Model "M_branch" initialized
+INFO - 2024-11-04 13:34:34 --> Model "M_report" initialized
+INFO - 2024-11-04 13:34:34 --> Model "M_department" initialized
+INFO - 2024-11-04 13:34:34 --> Model "M_client" initialized
+INFO - 2024-11-04 13:34:34 --> Controller Class Initialized
+INFO - 2024-11-04 13:34:34 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\_login.php
+INFO - 2024-11-04 13:34:34 --> Final output sent to browser
+DEBUG - 2024-11-04 13:34:34 --> Total execution time: 0.5217
+INFO - 2024-11-04 13:34:42 --> Config Class Initialized
+INFO - 2024-11-04 13:34:42 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:34:42 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:34:42 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:34:42 --> URI Class Initialized
+DEBUG - 2024-11-04 13:34:42 --> No URI present. Default controller set.
+INFO - 2024-11-04 13:34:42 --> Router Class Initialized
+INFO - 2024-11-04 13:34:42 --> Output Class Initialized
+INFO - 2024-11-04 13:34:42 --> Security Class Initialized
+DEBUG - 2024-11-04 13:34:42 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:34:42 --> Input Class Initialized
+INFO - 2024-11-04 13:34:42 --> Language Class Initialized
+INFO - 2024-11-04 13:34:42 --> Loader Class Initialized
+INFO - 2024-11-04 13:34:42 --> Helper loaded: url_helper
+INFO - 2024-11-04 13:34:42 --> Helper loaded: file_helper
+INFO - 2024-11-04 13:34:42 --> Helper loaded: html_helper
+INFO - 2024-11-04 13:34:42 --> Helper loaded: form_helper
+INFO - 2024-11-04 13:34:42 --> Database Driver Class Initialized
+INFO - 2024-11-04 13:34:42 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 13:34:42 --> Email Class Initialized
+INFO - 2024-11-04 13:34:42 --> Form Validation Class Initialized
+INFO - 2024-11-04 13:34:42 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 13:34:42 --> Pagination Class Initialized
+INFO - 2024-11-04 13:34:42 --> Model "M_user" initialized
+INFO - 2024-11-04 13:34:42 --> Model "M_bale" initialized
+INFO - 2024-11-04 13:34:42 --> Model "M_category" initialized
+INFO - 2024-11-04 13:34:42 --> Model "M_branch" initialized
+INFO - 2024-11-04 13:34:42 --> Model "M_report" initialized
+INFO - 2024-11-04 13:34:42 --> Model "M_department" initialized
+INFO - 2024-11-04 13:34:42 --> Model "M_client" initialized
+INFO - 2024-11-04 13:34:42 --> Controller Class Initialized
+INFO - 2024-11-04 13:34:42 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\_login.php
+INFO - 2024-11-04 13:34:42 --> Final output sent to browser
+DEBUG - 2024-11-04 13:34:42 --> Total execution time: 0.5290
+INFO - 2024-11-04 13:35:41 --> Config Class Initialized
+INFO - 2024-11-04 13:35:41 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:35:41 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:35:41 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:35:41 --> URI Class Initialized
+DEBUG - 2024-11-04 13:35:41 --> No URI present. Default controller set.
+INFO - 2024-11-04 13:35:41 --> Router Class Initialized
+INFO - 2024-11-04 13:35:41 --> Output Class Initialized
+INFO - 2024-11-04 13:35:41 --> Security Class Initialized
+DEBUG - 2024-11-04 13:35:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:35:41 --> Input Class Initialized
+INFO - 2024-11-04 13:35:41 --> Language Class Initialized
+INFO - 2024-11-04 13:35:41 --> Loader Class Initialized
+INFO - 2024-11-04 13:35:41 --> Helper loaded: url_helper
+INFO - 2024-11-04 13:35:41 --> Helper loaded: file_helper
+INFO - 2024-11-04 13:35:41 --> Helper loaded: html_helper
+INFO - 2024-11-04 13:35:41 --> Helper loaded: form_helper
+INFO - 2024-11-04 13:35:41 --> Database Driver Class Initialized
+INFO - 2024-11-04 13:35:41 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 13:35:41 --> Email Class Initialized
+INFO - 2024-11-04 13:35:41 --> Form Validation Class Initialized
+INFO - 2024-11-04 13:35:41 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 13:35:41 --> Pagination Class Initialized
+INFO - 2024-11-04 13:35:41 --> Model "M_user" initialized
+INFO - 2024-11-04 13:35:41 --> Model "M_bale" initialized
+INFO - 2024-11-04 13:35:41 --> Model "M_category" initialized
+INFO - 2024-11-04 13:35:41 --> Model "M_branch" initialized
+INFO - 2024-11-04 13:35:41 --> Model "M_report" initialized
+INFO - 2024-11-04 13:35:41 --> Model "M_department" initialized
+INFO - 2024-11-04 13:35:41 --> Model "M_client" initialized
+INFO - 2024-11-04 13:35:41 --> Controller Class Initialized
+INFO - 2024-11-04 13:35:41 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\_login.php
+INFO - 2024-11-04 13:35:42 --> Final output sent to browser
+DEBUG - 2024-11-04 13:35:42 --> Total execution time: 0.5155
+INFO - 2024-11-04 13:35:45 --> Config Class Initialized
+INFO - 2024-11-04 13:35:45 --> Config Class Initialized
+INFO - 2024-11-04 13:35:45 --> Config Class Initialized
+INFO - 2024-11-04 13:35:45 --> Config Class Initialized
+INFO - 2024-11-04 13:35:45 --> Hooks Class Initialized
+INFO - 2024-11-04 13:35:45 --> Hooks Class Initialized
+INFO - 2024-11-04 13:35:45 --> Config Class Initialized
+INFO - 2024-11-04 13:35:45 --> Hooks Class Initialized
+INFO - 2024-11-04 13:35:45 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:35:45 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:35:45 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:35:45 --> UTF-8 Support Enabled
+DEBUG - 2024-11-04 13:35:45 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:35:45 --> Utf8 Class Initialized
+DEBUG - 2024-11-04 13:35:45 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:35:45 --> Utf8 Class Initialized
+DEBUG - 2024-11-04 13:35:45 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:35:45 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:35:45 --> URI Class Initialized
+INFO - 2024-11-04 13:35:45 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:35:45 --> URI Class Initialized
+INFO - 2024-11-04 13:35:45 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:35:46 --> URI Class Initialized
+INFO - 2024-11-04 13:35:46 --> Router Class Initialized
+INFO - 2024-11-04 13:35:46 --> URI Class Initialized
+INFO - 2024-11-04 13:35:46 --> Router Class Initialized
+INFO - 2024-11-04 13:35:46 --> URI Class Initialized
+INFO - 2024-11-04 13:35:46 --> Router Class Initialized
+INFO - 2024-11-04 13:35:46 --> Output Class Initialized
+INFO - 2024-11-04 13:35:46 --> Router Class Initialized
+INFO - 2024-11-04 13:35:46 --> Output Class Initialized
+INFO - 2024-11-04 13:35:46 --> Router Class Initialized
+INFO - 2024-11-04 13:35:46 --> Output Class Initialized
+INFO - 2024-11-04 13:35:46 --> Security Class Initialized
+INFO - 2024-11-04 13:35:46 --> Output Class Initialized
+INFO - 2024-11-04 13:35:46 --> Security Class Initialized
+INFO - 2024-11-04 13:35:46 --> Output Class Initialized
+INFO - 2024-11-04 13:35:46 --> Security Class Initialized
+DEBUG - 2024-11-04 13:35:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:35:46 --> Security Class Initialized
+DEBUG - 2024-11-04 13:35:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:35:46 --> Security Class Initialized
+DEBUG - 2024-11-04 13:35:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:35:46 --> Input Class Initialized
+DEBUG - 2024-11-04 13:35:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:35:46 --> Input Class Initialized
+DEBUG - 2024-11-04 13:35:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:35:46 --> Input Class Initialized
+INFO - 2024-11-04 13:35:46 --> Language Class Initialized
+INFO - 2024-11-04 13:35:46 --> Input Class Initialized
+INFO - 2024-11-04 13:35:46 --> Language Class Initialized
+INFO - 2024-11-04 13:35:46 --> Input Class Initialized
+INFO - 2024-11-04 13:35:46 --> Language Class Initialized
+ERROR - 2024-11-04 13:35:46 --> 404 Page Not Found: Assets/css
+INFO - 2024-11-04 13:35:46 --> Language Class Initialized
+ERROR - 2024-11-04 13:35:46 --> 404 Page Not Found: Sass/dark-theme.css.map
+INFO - 2024-11-04 13:35:46 --> Language Class Initialized
+ERROR - 2024-11-04 13:35:46 --> 404 Page Not Found: Sass/responsive.css.map
+ERROR - 2024-11-04 13:35:46 --> 404 Page Not Found: Sass/main.css.map
+ERROR - 2024-11-04 13:35:46 --> 404 Page Not Found: Assets/plugins
+INFO - 2024-11-04 13:36:10 --> Config Class Initialized
+INFO - 2024-11-04 13:36:10 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:36:10 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:36:11 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:36:11 --> URI Class Initialized
+DEBUG - 2024-11-04 13:36:11 --> No URI present. Default controller set.
+INFO - 2024-11-04 13:36:11 --> Router Class Initialized
+INFO - 2024-11-04 13:36:11 --> Output Class Initialized
+INFO - 2024-11-04 13:36:11 --> Security Class Initialized
+DEBUG - 2024-11-04 13:36:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:36:11 --> Input Class Initialized
+INFO - 2024-11-04 13:36:11 --> Language Class Initialized
+INFO - 2024-11-04 13:36:11 --> Loader Class Initialized
+INFO - 2024-11-04 13:36:11 --> Helper loaded: url_helper
+INFO - 2024-11-04 13:36:11 --> Helper loaded: file_helper
+INFO - 2024-11-04 13:36:11 --> Helper loaded: html_helper
+INFO - 2024-11-04 13:36:11 --> Helper loaded: form_helper
+INFO - 2024-11-04 13:36:11 --> Database Driver Class Initialized
+INFO - 2024-11-04 13:36:11 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 13:36:11 --> Email Class Initialized
+INFO - 2024-11-04 13:36:11 --> Form Validation Class Initialized
+INFO - 2024-11-04 13:36:11 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 13:36:11 --> Pagination Class Initialized
+INFO - 2024-11-04 13:36:11 --> Model "M_user" initialized
+INFO - 2024-11-04 13:36:11 --> Model "M_bale" initialized
+INFO - 2024-11-04 13:36:11 --> Model "M_category" initialized
+INFO - 2024-11-04 13:36:11 --> Model "M_branch" initialized
+INFO - 2024-11-04 13:36:11 --> Model "M_report" initialized
+INFO - 2024-11-04 13:36:11 --> Model "M_department" initialized
+INFO - 2024-11-04 13:36:11 --> Model "M_client" initialized
+INFO - 2024-11-04 13:36:11 --> Controller Class Initialized
+INFO - 2024-11-04 13:36:11 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\_login.php
+INFO - 2024-11-04 13:36:11 --> Final output sent to browser
+DEBUG - 2024-11-04 13:36:11 --> Total execution time: 0.5234
+INFO - 2024-11-04 13:36:11 --> Config Class Initialized
+INFO - 2024-11-04 13:36:11 --> Config Class Initialized
+INFO - 2024-11-04 13:36:11 --> Config Class Initialized
+INFO - 2024-11-04 13:36:11 --> Hooks Class Initialized
+INFO - 2024-11-04 13:36:11 --> Config Class Initialized
+INFO - 2024-11-04 13:36:11 --> Config Class Initialized
+INFO - 2024-11-04 13:36:11 --> Hooks Class Initialized
+INFO - 2024-11-04 13:36:11 --> Hooks Class Initialized
+INFO - 2024-11-04 13:36:11 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:36:11 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:36:11 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:36:11 --> UTF-8 Support Enabled
+DEBUG - 2024-11-04 13:36:11 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:36:11 --> Utf8 Class Initialized
+DEBUG - 2024-11-04 13:36:11 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:36:11 --> Utf8 Class Initialized
+DEBUG - 2024-11-04 13:36:11 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:36:11 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:36:11 --> URI Class Initialized
+INFO - 2024-11-04 13:36:11 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:36:11 --> URI Class Initialized
+INFO - 2024-11-04 13:36:11 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:36:11 --> URI Class Initialized
+INFO - 2024-11-04 13:36:11 --> Router Class Initialized
+INFO - 2024-11-04 13:36:11 --> URI Class Initialized
+INFO - 2024-11-04 13:36:11 --> Router Class Initialized
+INFO - 2024-11-04 13:36:11 --> URI Class Initialized
+INFO - 2024-11-04 13:36:11 --> Router Class Initialized
+INFO - 2024-11-04 13:36:11 --> Output Class Initialized
+INFO - 2024-11-04 13:36:11 --> Router Class Initialized
+INFO - 2024-11-04 13:36:11 --> Output Class Initialized
+INFO - 2024-11-04 13:36:11 --> Router Class Initialized
+INFO - 2024-11-04 13:36:11 --> Output Class Initialized
+INFO - 2024-11-04 13:36:11 --> Security Class Initialized
+INFO - 2024-11-04 13:36:11 --> Output Class Initialized
+INFO - 2024-11-04 13:36:11 --> Security Class Initialized
+INFO - 2024-11-04 13:36:11 --> Output Class Initialized
+INFO - 2024-11-04 13:36:11 --> Security Class Initialized
+DEBUG - 2024-11-04 13:36:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:36:11 --> Security Class Initialized
+DEBUG - 2024-11-04 13:36:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:36:11 --> Security Class Initialized
+DEBUG - 2024-11-04 13:36:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:36:11 --> Input Class Initialized
+DEBUG - 2024-11-04 13:36:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:36:11 --> Input Class Initialized
+DEBUG - 2024-11-04 13:36:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:36:11 --> Input Class Initialized
+INFO - 2024-11-04 13:36:11 --> Language Class Initialized
+INFO - 2024-11-04 13:36:11 --> Input Class Initialized
+INFO - 2024-11-04 13:36:11 --> Language Class Initialized
+INFO - 2024-11-04 13:36:11 --> Input Class Initialized
+INFO - 2024-11-04 13:36:11 --> Language Class Initialized
+ERROR - 2024-11-04 13:36:11 --> 404 Page Not Found: Assets/css
+INFO - 2024-11-04 13:36:11 --> Language Class Initialized
+ERROR - 2024-11-04 13:36:11 --> 404 Page Not Found: Sass/dark-theme.css.map
+INFO - 2024-11-04 13:36:12 --> Language Class Initialized
+ERROR - 2024-11-04 13:36:12 --> 404 Page Not Found: Sass/main.css.map
+ERROR - 2024-11-04 13:36:12 --> 404 Page Not Found: Sass/responsive.css.map
+ERROR - 2024-11-04 13:36:12 --> 404 Page Not Found: Assets/plugins
+INFO - 2024-11-04 13:36:17 --> Config Class Initialized
+INFO - 2024-11-04 13:36:17 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:36:17 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:36:17 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:36:17 --> URI Class Initialized
+DEBUG - 2024-11-04 13:36:17 --> No URI present. Default controller set.
+INFO - 2024-11-04 13:36:18 --> Router Class Initialized
+INFO - 2024-11-04 13:36:18 --> Output Class Initialized
+INFO - 2024-11-04 13:36:18 --> Security Class Initialized
+DEBUG - 2024-11-04 13:36:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:36:18 --> Input Class Initialized
+INFO - 2024-11-04 13:36:18 --> Language Class Initialized
+INFO - 2024-11-04 13:36:18 --> Loader Class Initialized
+INFO - 2024-11-04 13:36:18 --> Helper loaded: url_helper
+INFO - 2024-11-04 13:36:18 --> Helper loaded: file_helper
+INFO - 2024-11-04 13:36:18 --> Helper loaded: html_helper
+INFO - 2024-11-04 13:36:18 --> Helper loaded: form_helper
+INFO - 2024-11-04 13:36:18 --> Database Driver Class Initialized
+INFO - 2024-11-04 13:36:18 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 13:36:18 --> Email Class Initialized
+INFO - 2024-11-04 13:36:18 --> Form Validation Class Initialized
+INFO - 2024-11-04 13:36:18 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 13:36:18 --> Pagination Class Initialized
+INFO - 2024-11-04 13:36:18 --> Model "M_user" initialized
+INFO - 2024-11-04 13:36:18 --> Model "M_bale" initialized
+INFO - 2024-11-04 13:36:18 --> Model "M_category" initialized
+INFO - 2024-11-04 13:36:18 --> Model "M_branch" initialized
+INFO - 2024-11-04 13:36:18 --> Model "M_report" initialized
+INFO - 2024-11-04 13:36:18 --> Model "M_department" initialized
+INFO - 2024-11-04 13:36:18 --> Model "M_client" initialized
+INFO - 2024-11-04 13:36:18 --> Controller Class Initialized
+INFO - 2024-11-04 13:36:18 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\_login.php
+INFO - 2024-11-04 13:36:18 --> Final output sent to browser
+DEBUG - 2024-11-04 13:36:18 --> Total execution time: 0.5261
+INFO - 2024-11-04 13:36:18 --> Config Class Initialized
+INFO - 2024-11-04 13:36:18 --> Config Class Initialized
+INFO - 2024-11-04 13:36:18 --> Config Class Initialized
+INFO - 2024-11-04 13:36:18 --> Config Class Initialized
+INFO - 2024-11-04 13:36:18 --> Hooks Class Initialized
+INFO - 2024-11-04 13:36:18 --> Config Class Initialized
+INFO - 2024-11-04 13:36:18 --> Hooks Class Initialized
+INFO - 2024-11-04 13:36:18 --> Hooks Class Initialized
+INFO - 2024-11-04 13:36:18 --> Hooks Class Initialized
+INFO - 2024-11-04 13:36:18 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:36:18 --> UTF-8 Support Enabled
+DEBUG - 2024-11-04 13:36:18 --> UTF-8 Support Enabled
+DEBUG - 2024-11-04 13:36:18 --> UTF-8 Support Enabled
+DEBUG - 2024-11-04 13:36:18 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:36:18 --> Utf8 Class Initialized
+DEBUG - 2024-11-04 13:36:18 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:36:18 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:36:18 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:36:18 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:36:18 --> URI Class Initialized
+INFO - 2024-11-04 13:36:18 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:36:18 --> URI Class Initialized
+INFO - 2024-11-04 13:36:18 --> URI Class Initialized
+INFO - 2024-11-04 13:36:18 --> URI Class Initialized
+INFO - 2024-11-04 13:36:18 --> Router Class Initialized
+INFO - 2024-11-04 13:36:18 --> URI Class Initialized
+INFO - 2024-11-04 13:36:18 --> Output Class Initialized
+INFO - 2024-11-04 13:36:18 --> Router Class Initialized
+INFO - 2024-11-04 13:36:18 --> Router Class Initialized
+INFO - 2024-11-04 13:36:18 --> Router Class Initialized
+INFO - 2024-11-04 13:36:18 --> Router Class Initialized
+INFO - 2024-11-04 13:36:18 --> Security Class Initialized
+INFO - 2024-11-04 13:36:18 --> Output Class Initialized
+INFO - 2024-11-04 13:36:18 --> Output Class Initialized
+INFO - 2024-11-04 13:36:18 --> Output Class Initialized
+INFO - 2024-11-04 13:36:18 --> Output Class Initialized
+DEBUG - 2024-11-04 13:36:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:36:18 --> Security Class Initialized
+INFO - 2024-11-04 13:36:18 --> Security Class Initialized
+INFO - 2024-11-04 13:36:18 --> Security Class Initialized
+INFO - 2024-11-04 13:36:18 --> Security Class Initialized
+INFO - 2024-11-04 13:36:18 --> Input Class Initialized
+DEBUG - 2024-11-04 13:36:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-11-04 13:36:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-11-04 13:36:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-11-04 13:36:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:36:18 --> Language Class Initialized
+INFO - 2024-11-04 13:36:18 --> Input Class Initialized
+INFO - 2024-11-04 13:36:18 --> Input Class Initialized
+INFO - 2024-11-04 13:36:18 --> Input Class Initialized
+INFO - 2024-11-04 13:36:18 --> Input Class Initialized
+ERROR - 2024-11-04 13:36:18 --> 404 Page Not Found: Sass/dark-theme.css.map
+INFO - 2024-11-04 13:36:18 --> Language Class Initialized
+INFO - 2024-11-04 13:36:18 --> Language Class Initialized
+INFO - 2024-11-04 13:36:18 --> Language Class Initialized
+INFO - 2024-11-04 13:36:18 --> Language Class Initialized
+ERROR - 2024-11-04 13:36:19 --> 404 Page Not Found: Assets/plugins
+ERROR - 2024-11-04 13:36:19 --> 404 Page Not Found: Sass/main.css.map
+ERROR - 2024-11-04 13:36:19 --> 404 Page Not Found: Sass/responsive.css.map
+ERROR - 2024-11-04 13:36:19 --> 404 Page Not Found: Assets/css
+INFO - 2024-11-04 13:36:28 --> Config Class Initialized
+INFO - 2024-11-04 13:36:28 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:36:28 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:36:28 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:36:28 --> URI Class Initialized
+DEBUG - 2024-11-04 13:36:28 --> No URI present. Default controller set.
+INFO - 2024-11-04 13:36:28 --> Router Class Initialized
+INFO - 2024-11-04 13:36:28 --> Output Class Initialized
+INFO - 2024-11-04 13:36:28 --> Security Class Initialized
+DEBUG - 2024-11-04 13:36:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:36:28 --> Input Class Initialized
+INFO - 2024-11-04 13:36:28 --> Language Class Initialized
+INFO - 2024-11-04 13:36:28 --> Loader Class Initialized
+INFO - 2024-11-04 13:36:28 --> Helper loaded: url_helper
+INFO - 2024-11-04 13:36:28 --> Helper loaded: file_helper
+INFO - 2024-11-04 13:36:28 --> Helper loaded: html_helper
+INFO - 2024-11-04 13:36:28 --> Helper loaded: form_helper
+INFO - 2024-11-04 13:36:28 --> Database Driver Class Initialized
+INFO - 2024-11-04 13:36:28 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 13:36:28 --> Email Class Initialized
+INFO - 2024-11-04 13:36:28 --> Form Validation Class Initialized
+INFO - 2024-11-04 13:36:28 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 13:36:28 --> Pagination Class Initialized
+INFO - 2024-11-04 13:36:28 --> Model "M_user" initialized
+INFO - 2024-11-04 13:36:28 --> Model "M_bale" initialized
+INFO - 2024-11-04 13:36:28 --> Model "M_category" initialized
+INFO - 2024-11-04 13:36:28 --> Model "M_branch" initialized
+INFO - 2024-11-04 13:36:28 --> Model "M_report" initialized
+INFO - 2024-11-04 13:36:28 --> Model "M_department" initialized
+INFO - 2024-11-04 13:36:28 --> Model "M_client" initialized
+INFO - 2024-11-04 13:36:28 --> Controller Class Initialized
+INFO - 2024-11-04 13:36:28 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\_login.php
+INFO - 2024-11-04 13:36:28 --> Final output sent to browser
+DEBUG - 2024-11-04 13:36:28 --> Total execution time: 0.5085
+INFO - 2024-11-04 13:36:28 --> Config Class Initialized
+INFO - 2024-11-04 13:36:28 --> Config Class Initialized
+INFO - 2024-11-04 13:36:28 --> Hooks Class Initialized
+INFO - 2024-11-04 13:36:28 --> Config Class Initialized
+INFO - 2024-11-04 13:36:28 --> Config Class Initialized
+INFO - 2024-11-04 13:36:28 --> Config Class Initialized
+INFO - 2024-11-04 13:36:28 --> Hooks Class Initialized
+INFO - 2024-11-04 13:36:28 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:36:28 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:36:28 --> Hooks Class Initialized
+INFO - 2024-11-04 13:36:28 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:36:28 --> UTF-8 Support Enabled
+DEBUG - 2024-11-04 13:36:28 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:36:28 --> Utf8 Class Initialized
+DEBUG - 2024-11-04 13:36:28 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:36:28 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:36:28 --> Utf8 Class Initialized
+DEBUG - 2024-11-04 13:36:28 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:36:28 --> URI Class Initialized
+INFO - 2024-11-04 13:36:28 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:36:28 --> URI Class Initialized
+INFO - 2024-11-04 13:36:28 --> URI Class Initialized
+INFO - 2024-11-04 13:36:28 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:36:28 --> Router Class Initialized
+INFO - 2024-11-04 13:36:28 --> URI Class Initialized
+INFO - 2024-11-04 13:36:28 --> Router Class Initialized
+INFO - 2024-11-04 13:36:28 --> Router Class Initialized
+INFO - 2024-11-04 13:36:28 --> Output Class Initialized
+INFO - 2024-11-04 13:36:28 --> URI Class Initialized
+INFO - 2024-11-04 13:36:28 --> Output Class Initialized
+INFO - 2024-11-04 13:36:28 --> Security Class Initialized
+INFO - 2024-11-04 13:36:28 --> Router Class Initialized
+INFO - 2024-11-04 13:36:28 --> Output Class Initialized
+INFO - 2024-11-04 13:36:28 --> Security Class Initialized
+INFO - 2024-11-04 13:36:28 --> Security Class Initialized
+INFO - 2024-11-04 13:36:28 --> Router Class Initialized
+DEBUG - 2024-11-04 13:36:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:36:28 --> Output Class Initialized
+DEBUG - 2024-11-04 13:36:28 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-11-04 13:36:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:36:28 --> Output Class Initialized
+INFO - 2024-11-04 13:36:28 --> Input Class Initialized
+INFO - 2024-11-04 13:36:28 --> Security Class Initialized
+INFO - 2024-11-04 13:36:28 --> Input Class Initialized
+INFO - 2024-11-04 13:36:28 --> Input Class Initialized
+INFO - 2024-11-04 13:36:28 --> Security Class Initialized
+INFO - 2024-11-04 13:36:28 --> Language Class Initialized
+DEBUG - 2024-11-04 13:36:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:36:28 --> Language Class Initialized
+INFO - 2024-11-04 13:36:28 --> Language Class Initialized
+DEBUG - 2024-11-04 13:36:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2024-11-04 13:36:28 --> 404 Page Not Found: Sass/main.css.map
+INFO - 2024-11-04 13:36:29 --> Input Class Initialized
+ERROR - 2024-11-04 13:36:29 --> 404 Page Not Found: Assets/css
+ERROR - 2024-11-04 13:36:29 --> 404 Page Not Found: Assets/plugins
+INFO - 2024-11-04 13:36:29 --> Input Class Initialized
+INFO - 2024-11-04 13:36:29 --> Language Class Initialized
+INFO - 2024-11-04 13:36:29 --> Language Class Initialized
+ERROR - 2024-11-04 13:36:29 --> 404 Page Not Found: Sass/responsive.css.map
+ERROR - 2024-11-04 13:36:29 --> 404 Page Not Found: Sass/dark-theme.css.map
+INFO - 2024-11-04 13:36:39 --> Config Class Initialized
+INFO - 2024-11-04 13:36:39 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:36:39 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:36:39 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:36:39 --> URI Class Initialized
+DEBUG - 2024-11-04 13:36:39 --> No URI present. Default controller set.
+INFO - 2024-11-04 13:36:39 --> Router Class Initialized
+INFO - 2024-11-04 13:36:39 --> Output Class Initialized
+INFO - 2024-11-04 13:36:39 --> Security Class Initialized
+DEBUG - 2024-11-04 13:36:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:36:39 --> Input Class Initialized
+INFO - 2024-11-04 13:36:39 --> Language Class Initialized
+INFO - 2024-11-04 13:36:39 --> Loader Class Initialized
+INFO - 2024-11-04 13:36:39 --> Helper loaded: url_helper
+INFO - 2024-11-04 13:36:39 --> Helper loaded: file_helper
+INFO - 2024-11-04 13:36:39 --> Helper loaded: html_helper
+INFO - 2024-11-04 13:36:39 --> Helper loaded: form_helper
+INFO - 2024-11-04 13:36:40 --> Database Driver Class Initialized
+INFO - 2024-11-04 13:36:40 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 13:36:40 --> Email Class Initialized
+INFO - 2024-11-04 13:36:40 --> Form Validation Class Initialized
+INFO - 2024-11-04 13:36:40 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 13:36:40 --> Pagination Class Initialized
+INFO - 2024-11-04 13:36:40 --> Model "M_user" initialized
+INFO - 2024-11-04 13:36:40 --> Model "M_bale" initialized
+INFO - 2024-11-04 13:36:40 --> Model "M_category" initialized
+INFO - 2024-11-04 13:36:40 --> Model "M_branch" initialized
+INFO - 2024-11-04 13:36:40 --> Model "M_report" initialized
+INFO - 2024-11-04 13:36:40 --> Model "M_department" initialized
+INFO - 2024-11-04 13:36:40 --> Model "M_client" initialized
+INFO - 2024-11-04 13:36:40 --> Controller Class Initialized
+INFO - 2024-11-04 13:36:40 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\_login.php
+INFO - 2024-11-04 13:36:40 --> Final output sent to browser
+DEBUG - 2024-11-04 13:36:40 --> Total execution time: 0.5499
+INFO - 2024-11-04 13:36:40 --> Config Class Initialized
+INFO - 2024-11-04 13:36:40 --> Config Class Initialized
+INFO - 2024-11-04 13:36:40 --> Hooks Class Initialized
+INFO - 2024-11-04 13:36:40 --> Config Class Initialized
+INFO - 2024-11-04 13:36:40 --> Config Class Initialized
+INFO - 2024-11-04 13:36:40 --> Config Class Initialized
+INFO - 2024-11-04 13:36:40 --> Hooks Class Initialized
+INFO - 2024-11-04 13:36:40 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:36:40 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:36:40 --> Hooks Class Initialized
+INFO - 2024-11-04 13:36:40 --> Hooks Class Initialized
+DEBUG - 2024-11-04 13:36:40 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:36:40 --> Utf8 Class Initialized
+DEBUG - 2024-11-04 13:36:40 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:36:40 --> Utf8 Class Initialized
+DEBUG - 2024-11-04 13:36:40 --> UTF-8 Support Enabled
+DEBUG - 2024-11-04 13:36:40 --> UTF-8 Support Enabled
+INFO - 2024-11-04 13:36:40 --> URI Class Initialized
+INFO - 2024-11-04 13:36:40 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:36:40 --> URI Class Initialized
+INFO - 2024-11-04 13:36:40 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:36:40 --> Utf8 Class Initialized
+INFO - 2024-11-04 13:36:40 --> Router Class Initialized
+INFO - 2024-11-04 13:36:40 --> URI Class Initialized
+INFO - 2024-11-04 13:36:40 --> Router Class Initialized
+INFO - 2024-11-04 13:36:40 --> URI Class Initialized
+INFO - 2024-11-04 13:36:40 --> URI Class Initialized
+INFO - 2024-11-04 13:36:40 --> Output Class Initialized
+INFO - 2024-11-04 13:36:40 --> Router Class Initialized
+INFO - 2024-11-04 13:36:40 --> Output Class Initialized
+INFO - 2024-11-04 13:36:40 --> Router Class Initialized
+INFO - 2024-11-04 13:36:40 --> Router Class Initialized
+INFO - 2024-11-04 13:36:40 --> Security Class Initialized
+INFO - 2024-11-04 13:36:40 --> Output Class Initialized
+INFO - 2024-11-04 13:36:40 --> Security Class Initialized
+INFO - 2024-11-04 13:36:40 --> Output Class Initialized
+INFO - 2024-11-04 13:36:40 --> Output Class Initialized
+DEBUG - 2024-11-04 13:36:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:36:40 --> Security Class Initialized
+DEBUG - 2024-11-04 13:36:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:36:40 --> Security Class Initialized
+INFO - 2024-11-04 13:36:40 --> Security Class Initialized
+INFO - 2024-11-04 13:36:40 --> Input Class Initialized
+DEBUG - 2024-11-04 13:36:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:36:40 --> Input Class Initialized
+DEBUG - 2024-11-04 13:36:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-11-04 13:36:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 13:36:40 --> Language Class Initialized
+INFO - 2024-11-04 13:36:40 --> Input Class Initialized
+INFO - 2024-11-04 13:36:40 --> Language Class Initialized
+INFO - 2024-11-04 13:36:40 --> Input Class Initialized
+INFO - 2024-11-04 13:36:40 --> Input Class Initialized
+ERROR - 2024-11-04 13:36:40 --> 404 Page Not Found: Assets/css
+INFO - 2024-11-04 13:36:40 --> Language Class Initialized
+ERROR - 2024-11-04 13:36:40 --> 404 Page Not Found: Assets/plugins
+INFO - 2024-11-04 13:36:40 --> Language Class Initialized
+INFO - 2024-11-04 13:36:40 --> Language Class Initialized
+ERROR - 2024-11-04 13:36:40 --> 404 Page Not Found: Sass/responsive.css.map
+ERROR - 2024-11-04 13:36:40 --> 404 Page Not Found: Sass/main.css.map
+ERROR - 2024-11-04 13:36:40 --> 404 Page Not Found: Sass/dark-theme.css.map
+INFO - 2024-11-04 14:33:09 --> Config Class Initialized
+INFO - 2024-11-04 14:33:09 --> Hooks Class Initialized
+DEBUG - 2024-11-04 14:33:09 --> UTF-8 Support Enabled
+INFO - 2024-11-04 14:33:09 --> Utf8 Class Initialized
+INFO - 2024-11-04 14:33:09 --> URI Class Initialized
+DEBUG - 2024-11-04 14:33:09 --> No URI present. Default controller set.
+INFO - 2024-11-04 14:33:09 --> Router Class Initialized
+INFO - 2024-11-04 14:33:09 --> Output Class Initialized
+INFO - 2024-11-04 14:33:09 --> Security Class Initialized
+DEBUG - 2024-11-04 14:33:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 14:33:09 --> Input Class Initialized
+INFO - 2024-11-04 14:33:09 --> Language Class Initialized
+INFO - 2024-11-04 14:33:09 --> Loader Class Initialized
+INFO - 2024-11-04 14:33:09 --> Helper loaded: url_helper
+INFO - 2024-11-04 14:33:09 --> Helper loaded: file_helper
+INFO - 2024-11-04 14:33:09 --> Helper loaded: html_helper
+INFO - 2024-11-04 14:33:09 --> Helper loaded: form_helper
+INFO - 2024-11-04 14:33:09 --> Database Driver Class Initialized
+INFO - 2024-11-04 14:33:09 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 14:33:09 --> Email Class Initialized
+INFO - 2024-11-04 14:33:09 --> Form Validation Class Initialized
+INFO - 2024-11-04 14:33:09 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 14:33:09 --> Pagination Class Initialized
+INFO - 2024-11-04 14:33:09 --> Model "M_user" initialized
+INFO - 2024-11-04 14:33:09 --> Model "M_bale" initialized
+INFO - 2024-11-04 14:33:10 --> Model "M_category" initialized
+INFO - 2024-11-04 14:33:10 --> Model "M_branch" initialized
+INFO - 2024-11-04 14:33:10 --> Model "M_report" initialized
+INFO - 2024-11-04 14:33:10 --> Model "M_department" initialized
+INFO - 2024-11-04 14:33:10 --> Model "M_client" initialized
+INFO - 2024-11-04 14:33:10 --> Controller Class Initialized
+INFO - 2024-11-04 14:33:10 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\_login.php
+INFO - 2024-11-04 14:33:10 --> Final output sent to browser
+DEBUG - 2024-11-04 14:33:10 --> Total execution time: 0.4369
+INFO - 2024-11-04 14:33:26 --> Config Class Initialized
+INFO - 2024-11-04 14:33:26 --> Hooks Class Initialized
+DEBUG - 2024-11-04 14:33:26 --> UTF-8 Support Enabled
+INFO - 2024-11-04 14:33:26 --> Utf8 Class Initialized
+INFO - 2024-11-04 14:33:26 --> URI Class Initialized
+DEBUG - 2024-11-04 14:33:26 --> No URI present. Default controller set.
+INFO - 2024-11-04 14:33:26 --> Router Class Initialized
+INFO - 2024-11-04 14:33:26 --> Output Class Initialized
+INFO - 2024-11-04 14:33:26 --> Security Class Initialized
+DEBUG - 2024-11-04 14:33:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 14:33:26 --> Input Class Initialized
+INFO - 2024-11-04 14:33:26 --> Language Class Initialized
+INFO - 2024-11-04 14:33:26 --> Loader Class Initialized
+INFO - 2024-11-04 14:33:26 --> Helper loaded: url_helper
+INFO - 2024-11-04 14:33:26 --> Helper loaded: file_helper
+INFO - 2024-11-04 14:33:26 --> Helper loaded: html_helper
+INFO - 2024-11-04 14:33:26 --> Helper loaded: form_helper
+INFO - 2024-11-04 14:33:26 --> Database Driver Class Initialized
+INFO - 2024-11-04 14:33:26 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 14:33:26 --> Email Class Initialized
+INFO - 2024-11-04 14:33:26 --> Form Validation Class Initialized
+INFO - 2024-11-04 14:33:26 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 14:33:26 --> Pagination Class Initialized
+INFO - 2024-11-04 14:33:26 --> Model "M_user" initialized
+INFO - 2024-11-04 14:33:26 --> Model "M_bale" initialized
+INFO - 2024-11-04 14:33:26 --> Model "M_category" initialized
+INFO - 2024-11-04 14:33:26 --> Model "M_branch" initialized
+INFO - 2024-11-04 14:33:26 --> Model "M_report" initialized
+INFO - 2024-11-04 14:33:26 --> Model "M_department" initialized
+INFO - 2024-11-04 14:33:26 --> Model "M_client" initialized
+INFO - 2024-11-04 14:33:26 --> Controller Class Initialized
+INFO - 2024-11-04 14:33:26 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\_login.php
+INFO - 2024-11-04 14:33:26 --> Final output sent to browser
+DEBUG - 2024-11-04 14:33:26 --> Total execution time: 0.4058
+INFO - 2024-11-04 14:33:39 --> Config Class Initialized
+INFO - 2024-11-04 14:33:39 --> Hooks Class Initialized
+DEBUG - 2024-11-04 14:33:39 --> UTF-8 Support Enabled
+INFO - 2024-11-04 14:33:39 --> Utf8 Class Initialized
+INFO - 2024-11-04 14:33:39 --> URI Class Initialized
+DEBUG - 2024-11-04 14:33:39 --> No URI present. Default controller set.
+INFO - 2024-11-04 14:33:39 --> Router Class Initialized
+INFO - 2024-11-04 14:33:39 --> Output Class Initialized
+INFO - 2024-11-04 14:33:39 --> Security Class Initialized
+DEBUG - 2024-11-04 14:33:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 14:33:39 --> Input Class Initialized
+INFO - 2024-11-04 14:33:39 --> Language Class Initialized
+INFO - 2024-11-04 14:33:39 --> Loader Class Initialized
+INFO - 2024-11-04 14:33:39 --> Helper loaded: url_helper
+INFO - 2024-11-04 14:33:39 --> Helper loaded: file_helper
+INFO - 2024-11-04 14:33:39 --> Helper loaded: html_helper
+INFO - 2024-11-04 14:33:39 --> Helper loaded: form_helper
+INFO - 2024-11-04 14:33:39 --> Database Driver Class Initialized
+INFO - 2024-11-04 14:33:39 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 14:33:39 --> Email Class Initialized
+INFO - 2024-11-04 14:33:39 --> Form Validation Class Initialized
+INFO - 2024-11-04 14:33:39 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 14:33:39 --> Pagination Class Initialized
+INFO - 2024-11-04 14:33:39 --> Model "M_user" initialized
+INFO - 2024-11-04 14:33:39 --> Model "M_bale" initialized
+INFO - 2024-11-04 14:33:39 --> Model "M_category" initialized
+INFO - 2024-11-04 14:33:39 --> Model "M_branch" initialized
+INFO - 2024-11-04 14:33:39 --> Model "M_report" initialized
+INFO - 2024-11-04 14:33:39 --> Model "M_department" initialized
+INFO - 2024-11-04 14:33:39 --> Model "M_client" initialized
+INFO - 2024-11-04 14:33:39 --> Controller Class Initialized
+INFO - 2024-11-04 14:33:40 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\_login.php
+INFO - 2024-11-04 14:33:40 --> Final output sent to browser
+DEBUG - 2024-11-04 14:33:40 --> Total execution time: 0.4073
+INFO - 2024-11-04 14:42:51 --> Config Class Initialized
+INFO - 2024-11-04 14:42:51 --> Config Class Initialized
+INFO - 2024-11-04 14:42:51 --> Config Class Initialized
+INFO - 2024-11-04 14:42:51 --> Hooks Class Initialized
+INFO - 2024-11-04 14:42:51 --> Config Class Initialized
+INFO - 2024-11-04 14:42:51 --> Hooks Class Initialized
+INFO - 2024-11-04 14:42:51 --> Config Class Initialized
+INFO - 2024-11-04 14:42:51 --> Hooks Class Initialized
+INFO - 2024-11-04 14:42:51 --> Hooks Class Initialized
+DEBUG - 2024-11-04 14:42:51 --> UTF-8 Support Enabled
+INFO - 2024-11-04 14:42:51 --> Utf8 Class Initialized
+DEBUG - 2024-11-04 14:42:51 --> UTF-8 Support Enabled
+INFO - 2024-11-04 14:42:51 --> Hooks Class Initialized
+DEBUG - 2024-11-04 14:42:51 --> UTF-8 Support Enabled
+INFO - 2024-11-04 14:42:51 --> URI Class Initialized
+DEBUG - 2024-11-04 14:42:51 --> UTF-8 Support Enabled
+INFO - 2024-11-04 14:42:51 --> Utf8 Class Initialized
+INFO - 2024-11-04 14:42:51 --> Utf8 Class Initialized
+DEBUG - 2024-11-04 14:42:51 --> UTF-8 Support Enabled
+INFO - 2024-11-04 14:42:51 --> Utf8 Class Initialized
+INFO - 2024-11-04 14:42:51 --> Router Class Initialized
+INFO - 2024-11-04 14:42:51 --> URI Class Initialized
+INFO - 2024-11-04 14:42:51 --> URI Class Initialized
+INFO - 2024-11-04 14:42:51 --> Utf8 Class Initialized
+INFO - 2024-11-04 14:42:51 --> URI Class Initialized
+INFO - 2024-11-04 14:42:51 --> Output Class Initialized
+INFO - 2024-11-04 14:42:51 --> Router Class Initialized
+INFO - 2024-11-04 14:42:51 --> Output Class Initialized
+INFO - 2024-11-04 14:42:51 --> Router Class Initialized
+INFO - 2024-11-04 14:42:51 --> URI Class Initialized
+INFO - 2024-11-04 14:42:51 --> Router Class Initialized
+INFO - 2024-11-04 14:42:51 --> Security Class Initialized
+INFO - 2024-11-04 14:42:51 --> Security Class Initialized
+INFO - 2024-11-04 14:42:51 --> Output Class Initialized
+INFO - 2024-11-04 14:42:51 --> Router Class Initialized
+INFO - 2024-11-04 14:42:51 --> Output Class Initialized
+DEBUG - 2024-11-04 14:42:51 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-11-04 14:42:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 14:42:51 --> Security Class Initialized
+INFO - 2024-11-04 14:42:51 --> Output Class Initialized
+INFO - 2024-11-04 14:42:51 --> Security Class Initialized
+INFO - 2024-11-04 14:42:51 --> Input Class Initialized
+INFO - 2024-11-04 14:42:51 --> Input Class Initialized
+DEBUG - 2024-11-04 14:42:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 14:42:51 --> Security Class Initialized
+DEBUG - 2024-11-04 14:42:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 14:42:51 --> Language Class Initialized
+INFO - 2024-11-04 14:42:51 --> Language Class Initialized
+INFO - 2024-11-04 14:42:51 --> Input Class Initialized
+DEBUG - 2024-11-04 14:42:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 14:42:51 --> Input Class Initialized
+ERROR - 2024-11-04 14:42:51 --> 404 Page Not Found: Assets/css
+INFO - 2024-11-04 14:42:51 --> Language Class Initialized
+ERROR - 2024-11-04 14:42:51 --> 404 Page Not Found: Sass/dark-theme.css.map
+INFO - 2024-11-04 14:42:51 --> Input Class Initialized
+INFO - 2024-11-04 14:42:51 --> Language Class Initialized
+ERROR - 2024-11-04 14:42:51 --> 404 Page Not Found: Assets/plugins
+INFO - 2024-11-04 14:42:51 --> Language Class Initialized
+ERROR - 2024-11-04 14:42:51 --> 404 Page Not Found: Sass/responsive.css.map
+ERROR - 2024-11-04 14:42:51 --> 404 Page Not Found: Sass/main.css.map
+INFO - 2024-11-04 14:45:25 --> Config Class Initialized
+INFO - 2024-11-04 14:45:25 --> Hooks Class Initialized
+DEBUG - 2024-11-04 14:45:25 --> UTF-8 Support Enabled
+INFO - 2024-11-04 14:45:25 --> Utf8 Class Initialized
+INFO - 2024-11-04 14:45:25 --> URI Class Initialized
+INFO - 2024-11-04 14:45:25 --> Router Class Initialized
+INFO - 2024-11-04 14:45:25 --> Output Class Initialized
+INFO - 2024-11-04 14:45:25 --> Security Class Initialized
+DEBUG - 2024-11-04 14:45:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 14:45:25 --> Input Class Initialized
+INFO - 2024-11-04 14:45:25 --> Language Class Initialized
+INFO - 2024-11-04 14:45:25 --> Loader Class Initialized
+INFO - 2024-11-04 14:45:25 --> Helper loaded: url_helper
+INFO - 2024-11-04 14:45:25 --> Helper loaded: file_helper
+INFO - 2024-11-04 14:45:25 --> Helper loaded: html_helper
+INFO - 2024-11-04 14:45:25 --> Helper loaded: form_helper
+INFO - 2024-11-04 14:45:25 --> Database Driver Class Initialized
+INFO - 2024-11-04 14:45:25 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 14:45:25 --> Email Class Initialized
+INFO - 2024-11-04 14:45:25 --> Form Validation Class Initialized
+INFO - 2024-11-04 14:45:25 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 14:45:25 --> Pagination Class Initialized
+INFO - 2024-11-04 14:45:25 --> Model "M_user" initialized
+INFO - 2024-11-04 14:45:25 --> Model "M_bale" initialized
+INFO - 2024-11-04 14:45:25 --> Model "M_category" initialized
+INFO - 2024-11-04 14:45:25 --> Model "M_branch" initialized
+INFO - 2024-11-04 14:45:25 --> Model "M_report" initialized
+INFO - 2024-11-04 14:45:25 --> Model "M_department" initialized
+INFO - 2024-11-04 14:45:25 --> Model "M_client" initialized
+INFO - 2024-11-04 14:45:25 --> Controller Class Initialized
+INFO - 2024-11-04 14:45:25 --> Config Class Initialized
+INFO - 2024-11-04 14:45:25 --> Hooks Class Initialized
+DEBUG - 2024-11-04 14:45:25 --> UTF-8 Support Enabled
+INFO - 2024-11-04 14:45:25 --> Utf8 Class Initialized
+INFO - 2024-11-04 14:45:25 --> URI Class Initialized
+INFO - 2024-11-04 14:45:25 --> Router Class Initialized
+INFO - 2024-11-04 14:45:25 --> Output Class Initialized
+INFO - 2024-11-04 14:45:25 --> Security Class Initialized
+DEBUG - 2024-11-04 14:45:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 14:45:25 --> Input Class Initialized
+INFO - 2024-11-04 14:45:25 --> Language Class Initialized
+INFO - 2024-11-04 14:45:25 --> Loader Class Initialized
+INFO - 2024-11-04 14:45:25 --> Helper loaded: url_helper
+INFO - 2024-11-04 14:45:25 --> Helper loaded: file_helper
+INFO - 2024-11-04 14:45:25 --> Helper loaded: html_helper
+INFO - 2024-11-04 14:45:25 --> Helper loaded: form_helper
+INFO - 2024-11-04 14:45:25 --> Database Driver Class Initialized
+INFO - 2024-11-04 14:45:25 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 14:45:25 --> Email Class Initialized
+INFO - 2024-11-04 14:45:25 --> Form Validation Class Initialized
+INFO - 2024-11-04 14:45:25 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 14:45:25 --> Pagination Class Initialized
+INFO - 2024-11-04 14:45:26 --> Model "M_user" initialized
+INFO - 2024-11-04 14:45:26 --> Model "M_bale" initialized
+INFO - 2024-11-04 14:45:26 --> Model "M_category" initialized
+INFO - 2024-11-04 14:45:26 --> Model "M_branch" initialized
+INFO - 2024-11-04 14:45:26 --> Model "M_report" initialized
+INFO - 2024-11-04 14:45:26 --> Model "M_department" initialized
+INFO - 2024-11-04 14:45:26 --> Model "M_client" initialized
+INFO - 2024-11-04 14:45:26 --> Controller Class Initialized
+INFO - 2024-11-04 14:45:26 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/header.php
+INFO - 2024-11-04 14:45:26 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/menu.php
+INFO - 2024-11-04 14:45:26 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/footer.php
+INFO - 2024-11-04 14:45:26 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\dashboard/_dashboard.php
+INFO - 2024-11-04 14:45:26 --> Final output sent to browser
+DEBUG - 2024-11-04 14:45:26 --> Total execution time: 0.3300
+INFO - 2024-11-04 14:45:32 --> Config Class Initialized
+INFO - 2024-11-04 14:45:32 --> Hooks Class Initialized
+DEBUG - 2024-11-04 14:45:32 --> UTF-8 Support Enabled
+INFO - 2024-11-04 14:45:32 --> Utf8 Class Initialized
+INFO - 2024-11-04 14:45:32 --> URI Class Initialized
+INFO - 2024-11-04 14:45:32 --> Router Class Initialized
+INFO - 2024-11-04 14:45:32 --> Output Class Initialized
+INFO - 2024-11-04 14:45:32 --> Security Class Initialized
+DEBUG - 2024-11-04 14:45:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 14:45:32 --> Input Class Initialized
+INFO - 2024-11-04 14:45:32 --> Language Class Initialized
+INFO - 2024-11-04 14:45:32 --> Loader Class Initialized
+INFO - 2024-11-04 14:45:32 --> Helper loaded: url_helper
+INFO - 2024-11-04 14:45:32 --> Helper loaded: file_helper
+INFO - 2024-11-04 14:45:32 --> Helper loaded: html_helper
+INFO - 2024-11-04 14:45:32 --> Helper loaded: form_helper
+INFO - 2024-11-04 14:45:32 --> Database Driver Class Initialized
+INFO - 2024-11-04 14:45:32 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 14:45:32 --> Email Class Initialized
+INFO - 2024-11-04 14:45:32 --> Form Validation Class Initialized
+INFO - 2024-11-04 14:45:32 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 14:45:32 --> Pagination Class Initialized
+INFO - 2024-11-04 14:45:32 --> Model "M_user" initialized
+INFO - 2024-11-04 14:45:32 --> Model "M_bale" initialized
+INFO - 2024-11-04 14:45:32 --> Model "M_category" initialized
+INFO - 2024-11-04 14:45:32 --> Model "M_branch" initialized
+INFO - 2024-11-04 14:45:32 --> Model "M_report" initialized
+INFO - 2024-11-04 14:45:32 --> Model "M_department" initialized
+INFO - 2024-11-04 14:45:32 --> Model "M_client" initialized
+INFO - 2024-11-04 14:45:32 --> Controller Class Initialized
+INFO - 2024-11-04 14:45:32 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/header.php
+INFO - 2024-11-04 14:45:32 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/menu.php
+INFO - 2024-11-04 14:45:32 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/footer.php
+INFO - 2024-11-04 14:45:32 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\report/_bales.php
+INFO - 2024-11-04 14:45:32 --> Final output sent to browser
+DEBUG - 2024-11-04 14:45:32 --> Total execution time: 0.4202
+INFO - 2024-11-04 14:53:10 --> Config Class Initialized
+INFO - 2024-11-04 14:53:10 --> Hooks Class Initialized
+DEBUG - 2024-11-04 14:53:10 --> UTF-8 Support Enabled
+INFO - 2024-11-04 14:53:10 --> Utf8 Class Initialized
+INFO - 2024-11-04 14:53:10 --> URI Class Initialized
+INFO - 2024-11-04 14:53:10 --> Router Class Initialized
+INFO - 2024-11-04 14:53:10 --> Output Class Initialized
+INFO - 2024-11-04 14:53:10 --> Security Class Initialized
+DEBUG - 2024-11-04 14:53:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 14:53:11 --> Input Class Initialized
+INFO - 2024-11-04 14:53:11 --> Language Class Initialized
+INFO - 2024-11-04 14:53:11 --> Loader Class Initialized
+INFO - 2024-11-04 14:53:11 --> Helper loaded: url_helper
+INFO - 2024-11-04 14:53:11 --> Helper loaded: file_helper
+INFO - 2024-11-04 14:53:11 --> Helper loaded: html_helper
+INFO - 2024-11-04 14:53:11 --> Helper loaded: form_helper
+INFO - 2024-11-04 14:53:11 --> Database Driver Class Initialized
+INFO - 2024-11-04 14:53:11 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 14:53:11 --> Email Class Initialized
+INFO - 2024-11-04 14:53:11 --> Form Validation Class Initialized
+INFO - 2024-11-04 14:53:11 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 14:53:11 --> Pagination Class Initialized
+INFO - 2024-11-04 14:53:11 --> Model "M_user" initialized
+INFO - 2024-11-04 14:53:11 --> Model "M_bale" initialized
+INFO - 2024-11-04 14:53:11 --> Model "M_category" initialized
+INFO - 2024-11-04 14:53:11 --> Model "M_branch" initialized
+INFO - 2024-11-04 14:53:11 --> Model "M_report" initialized
+INFO - 2024-11-04 14:53:11 --> Model "M_department" initialized
+INFO - 2024-11-04 14:53:11 --> Model "M_client" initialized
+INFO - 2024-11-04 14:53:11 --> Controller Class Initialized
+INFO - 2024-11-04 14:53:11 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/header.php
+INFO - 2024-11-04 14:53:11 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/menu.php
+INFO - 2024-11-04 14:53:11 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/footer.php
+INFO - 2024-11-04 14:53:11 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\report/_bales.php
+INFO - 2024-11-04 14:53:11 --> Final output sent to browser
+DEBUG - 2024-11-04 14:53:11 --> Total execution time: 0.4946
+INFO - 2024-11-04 14:53:13 --> Config Class Initialized
+INFO - 2024-11-04 14:53:13 --> Hooks Class Initialized
+DEBUG - 2024-11-04 14:53:13 --> UTF-8 Support Enabled
+INFO - 2024-11-04 14:53:13 --> Utf8 Class Initialized
+INFO - 2024-11-04 14:53:13 --> URI Class Initialized
+INFO - 2024-11-04 14:53:13 --> Router Class Initialized
+INFO - 2024-11-04 14:53:13 --> Output Class Initialized
+INFO - 2024-11-04 14:53:13 --> Security Class Initialized
+DEBUG - 2024-11-04 14:53:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 14:53:13 --> Input Class Initialized
+INFO - 2024-11-04 14:53:13 --> Language Class Initialized
+INFO - 2024-11-04 14:53:13 --> Loader Class Initialized
+INFO - 2024-11-04 14:53:13 --> Helper loaded: url_helper
+INFO - 2024-11-04 14:53:13 --> Helper loaded: file_helper
+INFO - 2024-11-04 14:53:13 --> Helper loaded: html_helper
+INFO - 2024-11-04 14:53:13 --> Helper loaded: form_helper
+INFO - 2024-11-04 14:53:13 --> Database Driver Class Initialized
+INFO - 2024-11-04 14:53:13 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 14:53:13 --> Email Class Initialized
+INFO - 2024-11-04 14:53:13 --> Form Validation Class Initialized
+INFO - 2024-11-04 14:53:13 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 14:53:13 --> Pagination Class Initialized
+INFO - 2024-11-04 14:53:13 --> Model "M_user" initialized
+INFO - 2024-11-04 14:53:14 --> Model "M_bale" initialized
+INFO - 2024-11-04 14:53:14 --> Model "M_category" initialized
+INFO - 2024-11-04 14:53:14 --> Model "M_branch" initialized
+INFO - 2024-11-04 14:53:14 --> Model "M_report" initialized
+INFO - 2024-11-04 14:53:14 --> Model "M_department" initialized
+INFO - 2024-11-04 14:53:14 --> Model "M_client" initialized
+INFO - 2024-11-04 14:53:14 --> Controller Class Initialized
+ERROR - 2024-11-04 14:53:14 --> Severity: error --> Exception: Call to undefined method M_report::get_bales() C:\xampp\htdocs\tobaco_app\application\controllers\Report.php 30
+INFO - 2024-11-04 14:53:35 --> Config Class Initialized
+INFO - 2024-11-04 14:53:35 --> Hooks Class Initialized
+DEBUG - 2024-11-04 14:53:35 --> UTF-8 Support Enabled
+INFO - 2024-11-04 14:53:35 --> Utf8 Class Initialized
+INFO - 2024-11-04 14:53:35 --> URI Class Initialized
+INFO - 2024-11-04 14:53:35 --> Router Class Initialized
+INFO - 2024-11-04 14:53:35 --> Output Class Initialized
+INFO - 2024-11-04 14:53:35 --> Security Class Initialized
+DEBUG - 2024-11-04 14:53:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 14:53:36 --> Input Class Initialized
+INFO - 2024-11-04 14:53:36 --> Language Class Initialized
+INFO - 2024-11-04 14:53:36 --> Loader Class Initialized
+INFO - 2024-11-04 14:53:36 --> Helper loaded: url_helper
+INFO - 2024-11-04 14:53:36 --> Helper loaded: file_helper
+INFO - 2024-11-04 14:53:36 --> Helper loaded: html_helper
+INFO - 2024-11-04 14:53:36 --> Helper loaded: form_helper
+INFO - 2024-11-04 14:53:36 --> Database Driver Class Initialized
+INFO - 2024-11-04 14:53:36 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 14:53:36 --> Email Class Initialized
+INFO - 2024-11-04 14:53:36 --> Form Validation Class Initialized
+INFO - 2024-11-04 14:53:36 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 14:53:36 --> Pagination Class Initialized
+INFO - 2024-11-04 14:53:36 --> Model "M_user" initialized
+INFO - 2024-11-04 14:53:36 --> Model "M_bale" initialized
+INFO - 2024-11-04 14:53:36 --> Model "M_category" initialized
+INFO - 2024-11-04 14:53:36 --> Model "M_branch" initialized
+INFO - 2024-11-04 14:53:36 --> Model "M_report" initialized
+INFO - 2024-11-04 14:53:36 --> Model "M_department" initialized
+INFO - 2024-11-04 14:53:36 --> Model "M_client" initialized
+INFO - 2024-11-04 14:53:36 --> Controller Class Initialized
+ERROR - 2024-11-04 14:53:36 --> Severity: error --> Exception: Call to undefined method M_report::get_bales() C:\xampp\htdocs\tobaco_app\application\controllers\Report.php 30
+INFO - 2024-11-04 14:54:23 --> Config Class Initialized
+INFO - 2024-11-04 14:54:23 --> Hooks Class Initialized
+DEBUG - 2024-11-04 14:54:23 --> UTF-8 Support Enabled
+INFO - 2024-11-04 14:54:23 --> Utf8 Class Initialized
+INFO - 2024-11-04 14:54:23 --> URI Class Initialized
+INFO - 2024-11-04 14:54:23 --> Router Class Initialized
+INFO - 2024-11-04 14:54:23 --> Output Class Initialized
+INFO - 2024-11-04 14:54:23 --> Security Class Initialized
+DEBUG - 2024-11-04 14:54:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 14:54:23 --> Input Class Initialized
+INFO - 2024-11-04 14:54:23 --> Language Class Initialized
+INFO - 2024-11-04 14:54:23 --> Loader Class Initialized
+INFO - 2024-11-04 14:54:23 --> Helper loaded: url_helper
+INFO - 2024-11-04 14:54:23 --> Helper loaded: file_helper
+INFO - 2024-11-04 14:54:23 --> Helper loaded: html_helper
+INFO - 2024-11-04 14:54:23 --> Helper loaded: form_helper
+INFO - 2024-11-04 14:54:23 --> Database Driver Class Initialized
+INFO - 2024-11-04 14:54:23 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 14:54:24 --> Email Class Initialized
+INFO - 2024-11-04 14:54:24 --> Form Validation Class Initialized
+INFO - 2024-11-04 14:54:24 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 14:54:24 --> Pagination Class Initialized
+INFO - 2024-11-04 14:54:24 --> Model "M_user" initialized
+INFO - 2024-11-04 14:54:24 --> Model "M_bale" initialized
+INFO - 2024-11-04 14:54:24 --> Model "M_category" initialized
+INFO - 2024-11-04 14:54:24 --> Model "M_branch" initialized
+INFO - 2024-11-04 14:54:24 --> Model "M_report" initialized
+INFO - 2024-11-04 14:54:24 --> Model "M_department" initialized
+INFO - 2024-11-04 14:54:24 --> Model "M_client" initialized
+INFO - 2024-11-04 14:54:24 --> Controller Class Initialized
+INFO - 2024-11-04 14:54:24 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/header.php
+INFO - 2024-11-04 14:54:24 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/menu.php
+ERROR - 2024-11-04 14:54:24 --> Severity: error --> Exception: Too few arguments to function M_report::get_bale_details(), 0 passed in C:\xampp\htdocs\tobaco_app\application\views\report\_refresh_bales.php on line 55 and exactly 1 expected C:\xampp\htdocs\tobaco_app\application\models\M_report.php 11
+INFO - 2024-11-04 15:03:42 --> Config Class Initialized
+INFO - 2024-11-04 15:03:42 --> Hooks Class Initialized
+DEBUG - 2024-11-04 15:03:42 --> UTF-8 Support Enabled
+INFO - 2024-11-04 15:03:42 --> Utf8 Class Initialized
+INFO - 2024-11-04 15:03:42 --> URI Class Initialized
+INFO - 2024-11-04 15:03:42 --> Router Class Initialized
+INFO - 2024-11-04 15:03:42 --> Output Class Initialized
+INFO - 2024-11-04 15:03:42 --> Security Class Initialized
+DEBUG - 2024-11-04 15:03:42 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 15:03:42 --> Input Class Initialized
+INFO - 2024-11-04 15:03:42 --> Language Class Initialized
+INFO - 2024-11-04 15:03:42 --> Loader Class Initialized
+INFO - 2024-11-04 15:03:42 --> Helper loaded: url_helper
+INFO - 2024-11-04 15:03:42 --> Helper loaded: file_helper
+INFO - 2024-11-04 15:03:42 --> Helper loaded: html_helper
+INFO - 2024-11-04 15:03:42 --> Helper loaded: form_helper
+INFO - 2024-11-04 15:03:42 --> Database Driver Class Initialized
+INFO - 2024-11-04 15:03:42 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 15:03:42 --> Email Class Initialized
+INFO - 2024-11-04 15:03:42 --> Form Validation Class Initialized
+INFO - 2024-11-04 15:03:42 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 15:03:42 --> Pagination Class Initialized
+INFO - 2024-11-04 15:03:42 --> Model "M_user" initialized
+INFO - 2024-11-04 15:03:42 --> Model "M_bale" initialized
+INFO - 2024-11-04 15:03:42 --> Model "M_category" initialized
+INFO - 2024-11-04 15:03:42 --> Model "M_branch" initialized
+INFO - 2024-11-04 15:03:42 --> Model "M_report" initialized
+INFO - 2024-11-04 15:03:42 --> Model "M_department" initialized
+INFO - 2024-11-04 15:03:42 --> Model "M_client" initialized
+INFO - 2024-11-04 15:03:42 --> Controller Class Initialized
+INFO - 2024-11-04 15:03:42 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/header.php
+INFO - 2024-11-04 15:03:42 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/menu.php
+ERROR - 2024-11-04 15:03:42 --> Severity: error --> Exception: Too few arguments to function M_report::get_bale_details(), 0 passed in C:\xampp\htdocs\tobaco_app\application\views\report\_refresh_bales.php on line 55 and exactly 1 expected C:\xampp\htdocs\tobaco_app\application\models\M_report.php 11
+INFO - 2024-11-04 15:04:20 --> Config Class Initialized
+INFO - 2024-11-04 15:04:20 --> Hooks Class Initialized
+DEBUG - 2024-11-04 15:04:20 --> UTF-8 Support Enabled
+INFO - 2024-11-04 15:04:20 --> Utf8 Class Initialized
+INFO - 2024-11-04 15:04:20 --> URI Class Initialized
+INFO - 2024-11-04 15:04:20 --> Router Class Initialized
+INFO - 2024-11-04 15:04:21 --> Output Class Initialized
+INFO - 2024-11-04 15:04:21 --> Security Class Initialized
+DEBUG - 2024-11-04 15:04:21 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 15:04:21 --> Input Class Initialized
+INFO - 2024-11-04 15:04:21 --> Language Class Initialized
+INFO - 2024-11-04 15:04:21 --> Loader Class Initialized
+INFO - 2024-11-04 15:04:21 --> Helper loaded: url_helper
+INFO - 2024-11-04 15:04:21 --> Helper loaded: file_helper
+INFO - 2024-11-04 15:04:21 --> Helper loaded: html_helper
+INFO - 2024-11-04 15:04:21 --> Helper loaded: form_helper
+INFO - 2024-11-04 15:04:21 --> Database Driver Class Initialized
+INFO - 2024-11-04 15:04:21 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 15:04:21 --> Email Class Initialized
+INFO - 2024-11-04 15:04:21 --> Form Validation Class Initialized
+INFO - 2024-11-04 15:04:21 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 15:04:21 --> Pagination Class Initialized
+INFO - 2024-11-04 15:04:21 --> Model "M_user" initialized
+INFO - 2024-11-04 15:04:21 --> Model "M_bale" initialized
+INFO - 2024-11-04 15:04:21 --> Model "M_category" initialized
+INFO - 2024-11-04 15:04:21 --> Model "M_branch" initialized
+INFO - 2024-11-04 15:04:21 --> Model "M_report" initialized
+INFO - 2024-11-04 15:04:21 --> Model "M_department" initialized
+INFO - 2024-11-04 15:04:21 --> Model "M_client" initialized
+INFO - 2024-11-04 15:04:21 --> Controller Class Initialized
+INFO - 2024-11-04 15:04:21 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/header.php
+INFO - 2024-11-04 15:04:21 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/menu.php
+ERROR - 2024-11-04 15:04:21 --> Severity: error --> Exception: Too few arguments to function M_report::get_bale_details(), 0 passed in C:\xampp\htdocs\tobaco_app\application\views\report\_refresh_bales.php on line 55 and exactly 1 expected C:\xampp\htdocs\tobaco_app\application\models\M_report.php 11
+INFO - 2024-11-04 15:04:39 --> Config Class Initialized
+INFO - 2024-11-04 15:04:39 --> Hooks Class Initialized
+DEBUG - 2024-11-04 15:04:39 --> UTF-8 Support Enabled
+INFO - 2024-11-04 15:04:39 --> Utf8 Class Initialized
+INFO - 2024-11-04 15:04:39 --> URI Class Initialized
+INFO - 2024-11-04 15:04:39 --> Router Class Initialized
+INFO - 2024-11-04 15:04:39 --> Output Class Initialized
+INFO - 2024-11-04 15:04:39 --> Security Class Initialized
+DEBUG - 2024-11-04 15:04:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 15:04:40 --> Input Class Initialized
+INFO - 2024-11-04 15:04:40 --> Language Class Initialized
+INFO - 2024-11-04 15:04:40 --> Loader Class Initialized
+INFO - 2024-11-04 15:04:40 --> Helper loaded: url_helper
+INFO - 2024-11-04 15:04:40 --> Helper loaded: file_helper
+INFO - 2024-11-04 15:04:40 --> Helper loaded: html_helper
+INFO - 2024-11-04 15:04:40 --> Helper loaded: form_helper
+INFO - 2024-11-04 15:04:40 --> Database Driver Class Initialized
+INFO - 2024-11-04 15:04:40 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 15:04:40 --> Email Class Initialized
+INFO - 2024-11-04 15:04:40 --> Form Validation Class Initialized
+INFO - 2024-11-04 15:04:40 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 15:04:40 --> Pagination Class Initialized
+INFO - 2024-11-04 15:04:40 --> Model "M_user" initialized
+INFO - 2024-11-04 15:04:40 --> Model "M_bale" initialized
+INFO - 2024-11-04 15:04:40 --> Model "M_category" initialized
+INFO - 2024-11-04 15:04:40 --> Model "M_branch" initialized
+INFO - 2024-11-04 15:04:40 --> Model "M_report" initialized
+INFO - 2024-11-04 15:04:40 --> Model "M_department" initialized
+INFO - 2024-11-04 15:04:40 --> Model "M_client" initialized
+INFO - 2024-11-04 15:04:40 --> Controller Class Initialized
+INFO - 2024-11-04 15:04:40 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/header.php
+INFO - 2024-11-04 15:04:40 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/menu.php
+ERROR - 2024-11-04 15:04:40 --> Severity: Warning --> Undefined variable $client_id C:\xampp\htdocs\tobaco_app\application\views\report\_refresh_bales.php 55
+INFO - 2024-11-04 15:04:40 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/footer.php
+INFO - 2024-11-04 15:04:40 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\report/_refresh_bales.php
+INFO - 2024-11-04 15:04:40 --> Final output sent to browser
+DEBUG - 2024-11-04 15:04:40 --> Total execution time: 0.3602
+INFO - 2024-11-04 15:05:16 --> Config Class Initialized
+INFO - 2024-11-04 15:05:16 --> Hooks Class Initialized
+DEBUG - 2024-11-04 15:05:16 --> UTF-8 Support Enabled
+INFO - 2024-11-04 15:05:16 --> Utf8 Class Initialized
+INFO - 2024-11-04 15:05:16 --> URI Class Initialized
+INFO - 2024-11-04 15:05:16 --> Router Class Initialized
+INFO - 2024-11-04 15:05:16 --> Output Class Initialized
+INFO - 2024-11-04 15:05:16 --> Security Class Initialized
+DEBUG - 2024-11-04 15:05:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 15:05:16 --> Input Class Initialized
+INFO - 2024-11-04 15:05:16 --> Language Class Initialized
+INFO - 2024-11-04 15:05:16 --> Loader Class Initialized
+INFO - 2024-11-04 15:05:16 --> Helper loaded: url_helper
+INFO - 2024-11-04 15:05:16 --> Helper loaded: file_helper
+INFO - 2024-11-04 15:05:16 --> Helper loaded: html_helper
+INFO - 2024-11-04 15:05:16 --> Helper loaded: form_helper
+INFO - 2024-11-04 15:05:16 --> Database Driver Class Initialized
+INFO - 2024-11-04 15:05:16 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 15:05:16 --> Email Class Initialized
+INFO - 2024-11-04 15:05:16 --> Form Validation Class Initialized
+INFO - 2024-11-04 15:05:16 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 15:05:16 --> Pagination Class Initialized
+INFO - 2024-11-04 15:05:16 --> Model "M_user" initialized
+INFO - 2024-11-04 15:05:16 --> Model "M_bale" initialized
+INFO - 2024-11-04 15:05:16 --> Model "M_category" initialized
+INFO - 2024-11-04 15:05:16 --> Model "M_branch" initialized
+INFO - 2024-11-04 15:05:16 --> Model "M_report" initialized
+INFO - 2024-11-04 15:05:16 --> Model "M_department" initialized
+INFO - 2024-11-04 15:05:16 --> Model "M_client" initialized
+INFO - 2024-11-04 15:05:16 --> Controller Class Initialized
+INFO - 2024-11-04 15:05:16 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/header.php
+INFO - 2024-11-04 15:05:16 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/menu.php
+INFO - 2024-11-04 15:05:16 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/footer.php
+INFO - 2024-11-04 15:05:16 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\report/_refresh_bales.php
+INFO - 2024-11-04 15:05:16 --> Final output sent to browser
+DEBUG - 2024-11-04 15:05:16 --> Total execution time: 0.3449
+INFO - 2024-11-04 15:05:55 --> Config Class Initialized
+INFO - 2024-11-04 15:05:55 --> Hooks Class Initialized
+DEBUG - 2024-11-04 15:05:55 --> UTF-8 Support Enabled
+INFO - 2024-11-04 15:05:55 --> Utf8 Class Initialized
+INFO - 2024-11-04 15:05:55 --> URI Class Initialized
+INFO - 2024-11-04 15:05:56 --> Router Class Initialized
+INFO - 2024-11-04 15:05:56 --> Output Class Initialized
+INFO - 2024-11-04 15:05:56 --> Security Class Initialized
+DEBUG - 2024-11-04 15:05:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 15:05:56 --> Input Class Initialized
+INFO - 2024-11-04 15:05:56 --> Language Class Initialized
+INFO - 2024-11-04 15:05:56 --> Loader Class Initialized
+INFO - 2024-11-04 15:05:56 --> Helper loaded: url_helper
+INFO - 2024-11-04 15:05:56 --> Helper loaded: file_helper
+INFO - 2024-11-04 15:05:56 --> Helper loaded: html_helper
+INFO - 2024-11-04 15:05:56 --> Helper loaded: form_helper
+INFO - 2024-11-04 15:05:56 --> Database Driver Class Initialized
+INFO - 2024-11-04 15:05:56 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 15:05:56 --> Email Class Initialized
+INFO - 2024-11-04 15:05:56 --> Form Validation Class Initialized
+INFO - 2024-11-04 15:05:56 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 15:05:56 --> Pagination Class Initialized
+INFO - 2024-11-04 15:05:56 --> Model "M_user" initialized
+INFO - 2024-11-04 15:05:56 --> Model "M_bale" initialized
+INFO - 2024-11-04 15:05:56 --> Model "M_category" initialized
+INFO - 2024-11-04 15:05:56 --> Model "M_branch" initialized
+INFO - 2024-11-04 15:05:56 --> Model "M_report" initialized
+INFO - 2024-11-04 15:05:56 --> Model "M_department" initialized
+INFO - 2024-11-04 15:05:56 --> Model "M_client" initialized
+INFO - 2024-11-04 15:05:56 --> Controller Class Initialized
+INFO - 2024-11-04 15:05:56 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/header.php
+INFO - 2024-11-04 15:05:56 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/menu.php
+INFO - 2024-11-04 15:05:56 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/footer.php
+INFO - 2024-11-04 15:05:56 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\report/_refresh_bales.php
+INFO - 2024-11-04 15:05:56 --> Final output sent to browser
+DEBUG - 2024-11-04 15:05:56 --> Total execution time: 0.3364
+INFO - 2024-11-04 15:06:00 --> Config Class Initialized
+INFO - 2024-11-04 15:06:00 --> Hooks Class Initialized
+DEBUG - 2024-11-04 15:06:00 --> UTF-8 Support Enabled
+INFO - 2024-11-04 15:06:00 --> Utf8 Class Initialized
+INFO - 2024-11-04 15:06:00 --> URI Class Initialized
+INFO - 2024-11-04 15:06:00 --> Router Class Initialized
+INFO - 2024-11-04 15:06:00 --> Output Class Initialized
+INFO - 2024-11-04 15:06:00 --> Security Class Initialized
+DEBUG - 2024-11-04 15:06:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 15:06:00 --> Input Class Initialized
+INFO - 2024-11-04 15:06:00 --> Language Class Initialized
+INFO - 2024-11-04 15:06:00 --> Loader Class Initialized
+INFO - 2024-11-04 15:06:00 --> Helper loaded: url_helper
+INFO - 2024-11-04 15:06:00 --> Helper loaded: file_helper
+INFO - 2024-11-04 15:06:00 --> Helper loaded: html_helper
+INFO - 2024-11-04 15:06:00 --> Helper loaded: form_helper
+INFO - 2024-11-04 15:06:00 --> Database Driver Class Initialized
+INFO - 2024-11-04 15:06:00 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 15:06:00 --> Email Class Initialized
+INFO - 2024-11-04 15:06:00 --> Form Validation Class Initialized
+INFO - 2024-11-04 15:06:00 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 15:06:00 --> Pagination Class Initialized
+INFO - 2024-11-04 15:06:00 --> Model "M_user" initialized
+INFO - 2024-11-04 15:06:00 --> Model "M_bale" initialized
+INFO - 2024-11-04 15:06:00 --> Model "M_category" initialized
+INFO - 2024-11-04 15:06:00 --> Model "M_branch" initialized
+INFO - 2024-11-04 15:06:00 --> Model "M_report" initialized
+INFO - 2024-11-04 15:06:00 --> Model "M_department" initialized
+INFO - 2024-11-04 15:06:00 --> Model "M_client" initialized
+INFO - 2024-11-04 15:06:00 --> Controller Class Initialized
+INFO - 2024-11-04 15:06:00 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/header.php
+INFO - 2024-11-04 15:06:00 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/menu.php
+INFO - 2024-11-04 15:06:00 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/footer.php
+INFO - 2024-11-04 15:06:00 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\report/_bales.php
+INFO - 2024-11-04 15:06:00 --> Final output sent to browser
+DEBUG - 2024-11-04 15:06:00 --> Total execution time: 0.3539
+INFO - 2024-11-04 15:06:03 --> Config Class Initialized
+INFO - 2024-11-04 15:06:03 --> Hooks Class Initialized
+DEBUG - 2024-11-04 15:06:03 --> UTF-8 Support Enabled
+INFO - 2024-11-04 15:06:03 --> Utf8 Class Initialized
+INFO - 2024-11-04 15:06:03 --> URI Class Initialized
+INFO - 2024-11-04 15:06:03 --> Router Class Initialized
+INFO - 2024-11-04 15:06:03 --> Output Class Initialized
+INFO - 2024-11-04 15:06:03 --> Security Class Initialized
+DEBUG - 2024-11-04 15:06:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-11-04 15:06:03 --> Input Class Initialized
+INFO - 2024-11-04 15:06:03 --> Language Class Initialized
+INFO - 2024-11-04 15:06:03 --> Loader Class Initialized
+INFO - 2024-11-04 15:06:03 --> Helper loaded: url_helper
+INFO - 2024-11-04 15:06:03 --> Helper loaded: file_helper
+INFO - 2024-11-04 15:06:03 --> Helper loaded: html_helper
+INFO - 2024-11-04 15:06:03 --> Helper loaded: form_helper
+INFO - 2024-11-04 15:06:03 --> Database Driver Class Initialized
+INFO - 2024-11-04 15:06:03 --> Session: Class initialized using 'files' driver.
+INFO - 2024-11-04 15:06:03 --> Email Class Initialized
+INFO - 2024-11-04 15:06:03 --> Form Validation Class Initialized
+INFO - 2024-11-04 15:06:03 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-11-04 15:06:03 --> Pagination Class Initialized
+INFO - 2024-11-04 15:06:03 --> Model "M_user" initialized
+INFO - 2024-11-04 15:06:03 --> Model "M_bale" initialized
+INFO - 2024-11-04 15:06:03 --> Model "M_category" initialized
+INFO - 2024-11-04 15:06:03 --> Model "M_branch" initialized
+INFO - 2024-11-04 15:06:03 --> Model "M_report" initialized
+INFO - 2024-11-04 15:06:03 --> Model "M_department" initialized
+INFO - 2024-11-04 15:06:03 --> Model "M_client" initialized
+INFO - 2024-11-04 15:06:03 --> Controller Class Initialized
+INFO - 2024-11-04 15:06:03 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/header.php
+INFO - 2024-11-04 15:06:03 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/menu.php
+INFO - 2024-11-04 15:06:03 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\includes/footer.php
+INFO - 2024-11-04 15:06:03 --> File loaded: C:\xampp\htdocs\tobaco_app\application\views\report/_refresh_bales.php
+INFO - 2024-11-04 15:06:03 --> Final output sent to browser
+DEBUG - 2024-11-04 15:06:03 --> Total execution time: 0.3396

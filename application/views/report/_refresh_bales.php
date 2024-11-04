@@ -11,7 +11,7 @@
             <div class="col">
                <div class="btn-group">
 
-                  <a class="btn btn-secondary">
+                  <a href="#" class="btn btn-secondary">
                      Print
                   </a>
 
@@ -19,46 +19,59 @@
 
             </div>
             <hr>
-
+        
             <div class="card">
                <div class="card-body">
+                  <div class="table-responsive">
 
-                  <table class="table table-striped" style="width:100%">
-                     <thead>
-                        <tr>
-                           <th>Total Weight</th>
-                           <th>Price</th>
-                           <th>Barcode</th>
-                           <th>Category</th>
-                           <th>Decription</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <?php
-                        foreach ($bales as $row): ?>
+                     <table class="table table-striped table-bordered" style="width:100%">
+                        <thead>
                            <tr>
-                              <td>
-                              <small><i><?=$this->M_report->get_weight_unit();?></i></small> <?= number_format($row['total_weight'],3) ?>
-                              </td>
-                              <td>
-                                <small><?=$this->M_report->get_currency();?></small> <?= number_format($row['price'],2) ?>
-                              </td>
-                              <td>
-                                 <?= $row['barcode'] ?>
-                              </td>
-
-                              <td>
-                                 <?= $this->M_category->get_category_name($row['category_id']); ?>
-                              </td>
-                              <td>
-                                 <?= $row['description'] ?>
-                              </td>
-
+                              <th>Trading Name</th>
+                              <th>Primary Contact</th>
+                              <th>Address</th>
+                              <th>Total Weight</th>
+                              <th>Price</th>
+                              <th>Category</th>
+                              <th>Bale Decription</th>
                            </tr>
-                        <?php endforeach; ?>
-                     </tbody>
-                  </table>
+                        </thead>
+                        <tbody>
+                           <?php
+                           foreach ($this->M_report->get_bale_details($client_id) as $row): ?>
+                              <tr>
 
+                                 <td>
+                                    <?= $row['trading_name']; ?>
+                                 </td>
+                                 <td>
+                                    <?= $row['primary_contact']; ?>
+                                 </td>
+                                 <td>
+                                    <?= $row['address']; ?>
+                                 </td>
+                                 <td>
+                                 <small><?=$this->M_report->get_weight_unit();?></small> <?= number_format($row['total_weight'],3) ?>
+                                 </td>
+
+                            
+                                 <td>
+                                 <small><?=$this->M_report->get_currency();?></small> <?= number_format($row['price'],2) ?>
+                                 </td>
+                                
+                                 <td>
+                                    <?= $row['category_name']; ?>
+                                 </td>
+                                 <td>
+                                    <?= $row['bale_description'] ?>
+                                 </td>
+                               
+                              </tr>
+                           <?php endforeach; ?>
+                        </tbody>
+                     </table>
+
+                  </div>
                </div>
             </div>
 

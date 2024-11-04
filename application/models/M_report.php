@@ -8,18 +8,15 @@ class M_report extends CI_Model
         parent::__construct();
     }
 
-    function get_bales($client_id)
+    function get_bale_details($client_id)
     {
-        $this->db->where('deleted', 0);
-        if ($client_id !== null) {
+        if ($client_id !== 'ALL') {
             $this->db->where('client_id', $client_id);
         }
-        $this->db->from('tbl_bales');
-        $this->db->order_by('bale_id', 'desc');
-        $query = $this->db->get();
-        
+        $query = $this->db->get('vwbale_details');
         return $query->result_array();
     }
+
 
     function get_weight_unit()
     {
@@ -42,6 +39,6 @@ class M_report extends CI_Model
             return $result->currency;
         }
     }
-    
+
 
 }
