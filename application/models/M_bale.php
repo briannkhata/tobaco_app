@@ -111,7 +111,7 @@ class M_bale extends CI_Model
         foreach ($result as $row) {
             foreach ($row as $key => $value) {
                 // Skip 'bale_id' and 'client_id' keys
-                if ($key === 'bale_id' || $key === 'client_id') {
+                if ($key === 'bale_id' || $key === 'client_id' || $key === 'qr_code') {
                     continue;
                 }
                 // Remove underscores and capitalize each word
@@ -124,7 +124,7 @@ class M_bale extends CI_Model
         foreach ($result as $row) {
             foreach ($row as $key => $value) {
                 // Skip 'bale_id' and 'client_id' keys
-                if ($key === 'bale_id' || $key === 'client_id') {
+                if ($key === 'bale_id' || $key === 'client_id' || $key === 'qr_code') {
                     continue;
                 }
                 // Format the key
