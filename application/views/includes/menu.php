@@ -1,10 +1,10 @@
 <aside class="sidebar-wrapper">
     <div class="sidebar-header">
         <div class="logo-icon">
-            <img src="<?= base_url(); ?>assets/images/logo-icon.png" class="logo-img" alt="">
+            <img src="<?= base_url(); ?>assets/images/auth/logo66.png" class="logo-img" alt="">
         </div>
         <div class="logo-name flex-grow-1">
-            <h5 class="mb-0">Tobaco Tracker</h5>
+            <h5 class="mb-0">BarcodeGen</h5>
         </div>
         <div class="sidebar-close">
             <span class="material-icons-outlined">close</span>

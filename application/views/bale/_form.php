@@ -64,28 +64,11 @@
                         } ?>">
                      </div>
 
-                     <!-- <div class="col-md-3">
-                        <label class="control-label">Unique Number</label>
-                        <input type="text" name="unique_number" class="form-control" value="<?php if (!empty($unique_number)) {
-                           echo $unique_number;
-                        } ?>">
-                     </div>
-
-                     <div class="col-md-3">
-                        <label class="control-label">Barcode</label>
-                        <input type="text" name="barcode" class="form-control" value="<?php if (!empty($barcode)) {
-                           echo $barcode;
-                        } ?>">
-                     </div> -->
-
-
                      <div class="col-md-12">
                         <label class="control-label">Description</label>
-                        <textarea name="description" class="form-control">
-                           <?php if (!empty($description)) {
+                        <input type="text" name="description" class="form-control" value="<?php if (!empty($description)) {
                               echo $description;
-                           } ?>
-                        </textarea>
+                           } ?>">
                      </div>
 
                      <div class="col-md-12">

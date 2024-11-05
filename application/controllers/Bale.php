@@ -17,6 +17,12 @@ class Bale extends CI_Controller
         $this->load->view("bale/_list", $data);
     }
 
+    function barcodes()
+    {
+        $data["page_title"] = "Barcodes |";
+        $this->load->view("bale/_barcodes", $data);
+    }
+
     function view($param = "")
     {
         $data["page_title"] = "Bale Details";

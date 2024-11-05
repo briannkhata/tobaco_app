@@ -4,11 +4,10 @@
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Tobaco Tracker |
-      <?= $page_title; ?>
+   <title>BarcodeGen
    </title>
    <!--favicon-->
-   <link rel="icon" href="<?= base_url(); ?>assets/images/favicon-32x32.png" type="image/png">
+   <link rel="icon" href="<?= base_url(); ?>assets/images/auth/logo66.png" type="image/png">
    <!--plugins-->
    <link href="<?= base_url(); ?>assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
    <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/plugins/metismenu/metisMenu.min.css">
@@ -60,7 +59,7 @@
          </div>
          <div class="search-bar flex-grow-1">
             <div class="position-relative">
-                        <span
+               <span
                   class="material-icons-outlined position-absolute me-3 translate-middle-y end-0 top-50 search-close">close</span>
                <div class="search-popup p-3">
                   <div class="card rounded-4 overflow-hidden">
@@ -102,3 +101,38 @@
          </ul>
       </nav>
    </header>
+   <style>
+      .sticker {
+         border: 2px solid #333;
+         border-radius: 8px;
+         padding: 10px;
+         margin: 10px 0;
+         background-color: #f8f9fa;
+         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .qr-code {
+         width: 100%;
+         height: auto;
+      }
+
+      @media print {
+         body {
+            margin: 0;
+         }
+
+         .sticker {
+            border: none;
+            box-shadow: none;
+            margin-bottom: 10px;
+         }
+
+
+         .sidebar-nav,
+         .sidebar-wrapper,
+         .print,
+         .top-header {
+            display: none !important;
+         }
+      }
+   </style>

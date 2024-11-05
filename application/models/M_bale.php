@@ -31,22 +31,118 @@ class M_bale extends CI_Model
     // }
 
 
+
+
+
+    // function get_bale_details($bale_id)
+    // {
+    //     $this->db->where('bale_id', $bale_id);
+    //     $query = $this->db->get('vwbale_details');
+    //     $result = $query->result_array();
+
+    //     $string_representation = "";
+    //     foreach ($result as $row) {
+    //         foreach ($row as $key => $value) {
+    //             $string_representation .= "$key: $value\n";
+    //         }
+    //         $string_representation .= "\n";
+    //     }
+
+    //     return $string_representation;
+    // }
+
+
+    // function get_bale_details($bale_id)
+    // {
+    //     $this->db->where('bale_id', $bale_id);
+    //     $query = $this->db->get('vwbale_details');
+    //     $result = $query->result_array();
+
+    //     if (empty($result)) {
+    //         return "No details found for bale ID: $bale_id";
+    //     }
+
+    //     $string_representation = [];
+    //     $max_key_length = 0;
+
+    //     // First pass to determine the maximum key length
+    //     foreach ($result as $row) {
+    //         foreach ($row as $key => $value) {
+    //             // Skip 'bale_id' and 'client_id' keys
+    //             if ($key === 'bale_id' || $key === 'client_id') {
+    //                 continue;
+    //             }
+    //             $max_key_length = max($max_key_length, strlen($key));
+    //         }
+    //     }
+
+    //     // Second pass to build the formatted string
+    //     foreach ($result as $row) {
+    //         foreach ($row as $key => $value) {
+    //             // Skip 'bale_id' and 'client_id' keys
+    //             if ($key === 'bale_id' || $key === 'client_id') {
+    //                 continue;
+    //             }
+    //             // Align key and value
+    //             $formatted_line = str_pad($key, $max_key_length + 2) . ": $value"; // Add padding
+    //             $string_representation[] = $formatted_line;
+    //         }
+    //         $string_representation[] = ""; // Blank line for separation
+    //     }
+
+    //     return implode("\n", $string_representation);
+    // }
+
+
     function get_bale_details($bale_id)
     {
         $this->db->where('bale_id', $bale_id);
         $query = $this->db->get('vwbale_details');
         $result = $query->result_array();
 
-        $string_representation = "";
-        foreach ($result as $row) {
-            foreach ($row as $key => $value) {
-                $string_representation .= "$key: $value\n";
-            }
-            $string_representation .= "\n";
+        if (empty($result)) {
+            return "No details found for bale ID: $bale_id";
         }
 
-        return $string_representation;
+        $string_representation = [];
+        $max_key_length = 0;
+
+        // First pass to determine the maximum key length after modifying keys
+        foreach ($result as $row) {
+            foreach ($row as $key => $value) {
+                // Skip 'bale_id' and 'client_id' keys
+                if ($key === 'bale_id' || $key === 'client_id') {
+                    continue;
+                }
+                // Remove underscores and capitalize each word
+                $formatted_key = ucwords(str_replace('_', ' ', $key));
+                $max_key_length = max($max_key_length, strlen($formatted_key));
+            }
+        }
+
+        // Second pass to build the formatted string
+        foreach ($result as $row) {
+            foreach ($row as $key => $value) {
+                // Skip 'bale_id' and 'client_id' keys
+                if ($key === 'bale_id' || $key === 'client_id') {
+                    continue;
+                }
+                // Format the key
+                $formatted_key = ucwords(str_replace('_', ' ', $key));
+                // Align key and value
+                $formatted_line = str_pad($formatted_key, $max_key_length + 2) . ": $value"; // Add padding
+                $string_representation[] = $formatted_line;
+            }
+            $string_representation[] = ""; // Add horizontal separator
+        }
+
+        return implode("\n", $string_representation);
     }
+
+
+
+
+
 
 
 

@@ -4,11 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tobaco Tracker |
-        <?= $page_title; ?>
+    <title>BarcodeGen
     </title>
     <!--favicon-->
-    <link rel="icon" href="<?= base_url(); ?>assets/images/favicon-32x32.png" type="image/png">
+    <link rel="icon" href="<?= base_url(); ?>assets/images/auth/logo66.png" type="image/png">
 
     <!--plugins-->
     <link href="<?= base_url(); ?>assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
@@ -27,6 +26,29 @@
     <link href="<?= base_url(); ?>sass/responsive.css" rel="stylesheet">
 
 </head>
+<style>
+    .title {
+        font-size: 24px;
+        /* Adjust the font size */
+        text-align: center;
+        /* Center the title */
+        margin: 20px 0;
+        /* Margin above and below the title */
+        color: #333;
+        /* Change text color */
+    }
+
+    .divider {
+        border: none;
+        /* Remove default border */
+        height: 2px;
+        /* Set height of the hr */
+        background-color: #333;
+        /* Color of the horizontal line */
+        margin: 20px 0;
+        /* Margin above and below the line */
+    }
+</style>
 
 <body>
 
@@ -36,12 +58,13 @@
             <div class="row g-0">
                 <div
                     class="col-12 col-xl-7 col-xxl-8 auth-cover-left align-items-center justify-content-center d-none d-xl-flex border-end">
-                            <img src="<?= base_url(); ?>assets/images/auth/back-login.png"
-                                 alt="">
+                    <img src="<?= base_url(); ?>assets/images/auth/back-login.png" alt="">
                 </div>
                 <div class="col-12 col-xl-5 col-xxl-4 auth-cover-right align-items-center justify-content-center">
                     <div class="card rounded-0 m-3 mb-0 border-0 shadow-none">
                         <div class="card-body p-sm-5">
+                            <h1 class="title">BarcodeGen</h1>
+                            <hr class="divider">
                             <!-- <img src="<?= base_url(); ?>assets/images/auth/logo66.png" class="" style="margin-left:-8%; margin-bottom: -5;" width="145" alt=""> -->
 
                             <?php if ($this->session->flashdata('message2')) {
